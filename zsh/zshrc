@@ -3,6 +3,9 @@ export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 
+autoload colors
+colors
+
 source ~/.zsh/alias.zsh
 source ~/.zsh/path.zsh
 source ~/.zsh/prompt.zsh
