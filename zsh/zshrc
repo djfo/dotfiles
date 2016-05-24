@@ -11,3 +11,9 @@ source ~/.zsh/path.zsh
 source ~/.zsh/prompt.zsh
 source ~/.zsh/slash-backward-kill-word.zsh
 source ~/.zsh/up.zsh
+
+case `uname` in
+  Darwin)
+    . `brew --prefix`/etc/profile.d/z.sh
+    ;;
+esac
