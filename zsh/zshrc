@@ -15,6 +15,10 @@ source ~/.zsh/path.zsh
 source ~/.zsh/prompt.zsh
 source ~/.zsh/up.zsh
 
+for each in `ls -1 ~/.zsh/local/*.zsh`; do
+  source $each
+done
+
 case `uname` in
   Darwin)
     . `brew --prefix`/etc/profile.d/z.sh
