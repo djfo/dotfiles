@@ -9,14 +9,10 @@ colors
 autoload -Uz compinit
 compinit
 
-autoload -z edit-command-line
-zle -N edit-command-line
-bindkey "^X^E" edit-command-line
-
 source ~/.zsh/alias.zsh
+source ~/.zsh/le.zsh
 source ~/.zsh/path.zsh
 source ~/.zsh/prompt.zsh
-source ~/.zsh/slash-backward-kill-word.zsh
 source ~/.zsh/up.zsh
 
 case `uname` in

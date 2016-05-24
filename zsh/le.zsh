@@ -1,3 +1,7 @@
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey "^X^E" edit-command-line
+
 # http://grml.org/zsh-pony/#sec-10-5
 slash-backward-kill-word() {
   local WORDCHARS="${WORDCHARS:s@/@}"
