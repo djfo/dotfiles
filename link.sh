@@ -2,7 +2,7 @@
 tmp=`pwd`
 cd
 link() {
-  if [ -f $2 -a ! -L $2 ]; then
+  if [ -e $2 -a ! -L $2 ]; then
     echo "E: $2 is not a symlink"
   elif [ -L $2 ]; then
     target=`readlink $2`
