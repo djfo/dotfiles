@@ -1,0 +1,12 @@
+#!/bin/sh
+if [ -t 0 ]; then
+  let "plus = `git diff $* | grep '^+' | wc -l`"
+  let "minus = `git diff $* | grep '^-' | wc -l`"
+else
+  temp=`mktemp /tmp/git-balance.XXXX`
+  let "plus=`tee $temp | grep '^+' | wc -l`"
+  let "minus=`cat $temp | grep '^-' | wc -l`"
+  rm $temp
+fi
+let "balance = plus - minus"
+echo "$plus - $minus = $balance"
