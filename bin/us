@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Set X11 keyboard layout to basename.
+#
+# Ie. invoke 'setxkbmap -layout us' if called as 'us',
+# or '... -layout de' if called de.
+
+SELF=`basename $0`
+setxkbmap -layout $SELF
