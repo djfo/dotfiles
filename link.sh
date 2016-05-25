@@ -20,3 +20,4 @@ link zsh .zsh
 link zsh/zshrc .zshrc
 link screenrc .screenrc
 link ghci .ghci
+link bin bin
