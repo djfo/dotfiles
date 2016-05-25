@@ -1,0 +1,18 @@
+startup_message off
+
+vbell on
+vbell_msg "bell: window ~%"
+vbellwait 2
+
+# from https://wiki.archlinux.org/index.php/GNU_Screen
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W} %c %{g}]'
+backtick 42 1 1 date +%H:%M:%S
+backtick 43 5 5 uptime
+hardstatus on
+hardstatus alwayslastline
+#hardstatus string "%w"
+#hardstatus alwayslastline "%43`"
+
+caption always "%{= wK}%-w%{= cb}%n %t%{-}%+w %-= @%H"
+
+defscrollback 5000
