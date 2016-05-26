@@ -28,4 +28,9 @@ short() {
   unset RPS1
 }
 
+short_() {
+  set_PS1 "%$1~ $ "
+  RPS1="\$vcs_info_msg_0_%n@%m"
+}
+
 long
