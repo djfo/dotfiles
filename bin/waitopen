@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "Launching application..."
+open "$@"
+/bin/echo -n "Press Enter to continue..."
+read dummy
