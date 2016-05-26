@@ -1,9 +1,9 @@
-:set +t
-:set +s
-
 -- :set prompt "> "
 -- :set prompt "%s λ> "
 :set prompt "λ> "
 
 :def hlint const . return $ ":! hlint \"src\""
 :def hoogle \s -> return $ ":! hoogle --count=15 \"" ++ s ++ "\""
+
+:set +t
+:set +s
