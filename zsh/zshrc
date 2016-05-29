@@ -8,6 +8,7 @@ colors
 
 autoload -Uz compinit
 compinit
+zstyle ':completion:*' menu select=4
 
 source ~/.zsh/alias.zsh
 source ~/.zsh/le.zsh
