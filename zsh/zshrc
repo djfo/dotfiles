@@ -15,6 +15,12 @@ source ~/.zsh/path.zsh
 source ~/.zsh/prompt.zsh
 source ~/.zsh/up.zsh
 
+case `uname` in
+  Linux)
+    source ~/.zsh/x11.zsh
+    ;;
+esac
+
 for each in `find ~/.zsh/local -name \*.zsh`; do
   source $each
 done
