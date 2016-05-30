@@ -8,6 +8,11 @@ case `uname` in
     alias ls="ls -F1 --color=auto"
     alias lc="ls -FC --color=auto"
     alias ll="ls -Fl --color=auto"
+
+    function my_open() {
+      xdg-open $1 >/dev/null 2>/dev/null &
+    }
+    alias o="my_open"
     ;;
   Darwin)
     alias ls="ls -GF1"
