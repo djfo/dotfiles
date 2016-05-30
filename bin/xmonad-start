@@ -1,0 +1,3 @@
+#!/bin/sh
+feh --bg-scale /usr/share/backgrounds/f23/default/wide/f23.png
+exec xmonad
