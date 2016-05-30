@@ -1,0 +1,7 @@
+xterm*font: *-fixed-*-*-*-20-*
+xterm*foreground: gray
+xterm*background: black
+xterm*cursorblink: true
+xterm*visualbell: true
+xterm*utf8: 1
+xterm*cursorColor: green

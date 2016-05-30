@@ -23,3 +23,8 @@ link ghci .ghci
 link bin bin
 link git/gitconfig .gitconfig
 link git .git
+case `uname` in
+  Linux)
+    link x11/Xresources ~/.Xresources
+    ;;
+esac
