@@ -1,9 +1,13 @@
 [alias]
 	b = branch
 	co = checkout
-	dc = diff --cached
 	d = diff
+	dc = diff --cached
+	f = fetch
+	p = push
 	s = status
+	t = log --graph --branches --decorate
+	tr = log --graph --branches --decorate --remotes
 [include]
 	path = ~/.git/config
 [push]
