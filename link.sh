@@ -25,7 +25,8 @@ link git/gitconfig .gitconfig
 link git .git
 case `uname` in
   Linux)
-    link x11/Xresources ~/.Xresources
-    link x11/Xmodmap ~/.Xmodmap
+    link x11/Xresources .Xresources
+    link x11/Xmodmap .Xmodmap
+    link z/z.sh .zsh/z.sh
     ;;
 esac
