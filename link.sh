@@ -21,3 +21,5 @@ link zsh/zshrc .zshrc
 link screenrc .screenrc
 link ghci .ghci
 link bin bin
+link git/gitconfig .gitconfig
+link git .git
