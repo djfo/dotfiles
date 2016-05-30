@@ -6,3 +6,5 @@
 	s = status
 [include]
 	path = ~/.git/config
+[push]
+	default = simple
