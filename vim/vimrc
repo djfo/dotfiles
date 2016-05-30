@@ -1,0 +1,17 @@
+set nocp
+
+set et
+set ts=8
+set sts=2
+set sw=2
+set ai
+set nu
+
+set incsearch
+set ruler
+
+nmap  :tabp<CR>
+nmap  :tabn<CR>
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
+syntax on

@@ -23,6 +23,7 @@ link ghci .ghci
 link bin bin
 link git/gitconfig .gitconfig
 link git .git
+link vim/vimrc .vimrc
 case `uname` in
   Linux)
     link x11/Xresources .Xresources
