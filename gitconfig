@@ -1,0 +1,5 @@
+[alias]
+	co = checkout
+	dc = diff --cached
+	d = diff
+	s = status
