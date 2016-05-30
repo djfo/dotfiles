@@ -19,18 +19,14 @@ source ~/.zsh/up.zsh
 case `uname` in
   Linux)
     source ~/.zsh/x11.zsh
+    . $HOME/.zsh/z.sh
+    unset SSH_ASKPASS
+    ;;
+  Darwin)
+    . `brew --prefix`/etc/profile.d/z.sh
     ;;
 esac
 
 for each in `find ~/.zsh/local -name \*.zsh`; do
   source $each
 done
-
-case `uname` in
-  Darwin)
-    . `brew --prefix`/etc/profile.d/z.sh
-    ;;
-  Linux)
-    . $HOME/.zsh/z.sh
-    ;;
-esac
