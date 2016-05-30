@@ -26,5 +26,6 @@ link git .git
 case `uname` in
   Linux)
     link x11/Xresources ~/.Xresources
+    link x11/Xmodmap ~/.Xmodmap
     ;;
 esac
