@@ -10,6 +10,8 @@
 	s = status
 	t = log --graph --branches --decorate
 	tr = log --graph --branches --decorate --remotes
+	tra = log --graph --decorate --all --remotes --branches
+	tro = log --pretty=oneline --abbrev-commit --graph --decorate
 [include]
 	path = ~/.git/config
 [push]
