@@ -1,3 +1,6 @@
 [submodule "z"]
 	path = z
 	url = https://github.com/rupa/z
+[submodule "vim-pathogen"]
+	path = vim-pathogen
+	url = https://github.com/tpope/vim-pathogen

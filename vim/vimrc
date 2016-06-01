@@ -10,8 +10,31 @@ set nu
 set incsearch
 set ruler
 
+set backspace=indent,eol,start
+set wrap
+set linebreak
+set showbreak=…
+set ignorecase
+
+set showcmd
+set ruler
+set statusline=%<%f\ 0x%02B\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+
+set nobackup
+set writebackup
+
+" previous/next tab using C-n and C-p
 nmap  :tabp<CR>
 nmap  :tabn<CR>
+
+" hide highlighted search
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
+" move link up/down using C-k and C-j
+map <c-k> kddpk
+map <c-j> ddp
+
+" open/close fold using <space>
+nnoremap <space> za
 
 syntax on
