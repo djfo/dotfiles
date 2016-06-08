@@ -1,12 +1,21 @@
+#BUILTIN_DISPLAY=eDP1
+#EXTERNAL_DISPLAY=DP2
+
+BUILTIN_DISPLAY=LVDS1
+EXTERNAL_DISPLAY=VGA1
+
 function dual() {
-  #xrandr --output DP2 --primary --right-of eDP1 --auto
-  xrandr --output DP2 --primary --left-of eDP1 --auto
+  xrandr --output $EXTERNAL_DISPLAY --primary --left-of $BUILTIN_DISPLAY --auto
 }
 
 function mirror() {
-  xrandr --output DP2 --primary --same-as eDP1 --auto
+  xrandr --output $EXTERNAL_DISPLAY --primary --same-as $BUILTIN_DISPLAY --auto
 }
 
-function single() {
-  xrandr --output DP2 --off
+function internal() {
+  xrandr --output $EXTERNAL_DISPLAY --off
+}
+
+function external() {
+  xrandr --output $BUILTIN_DISPLAY --off
 }
