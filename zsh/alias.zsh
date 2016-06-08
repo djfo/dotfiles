@@ -11,6 +11,7 @@ case `uname` in
 
     function my_open() {
       xdg-open $1 >/dev/null 2>/dev/null &
+      disown
     }
     alias o="my_open"
     ;;
