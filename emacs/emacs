@@ -1,0 +1,11 @@
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/evil")
+(require 'evil)
+(evil-mode 1)
+
+(load-theme 'tango-dark)
+
+(set-default-font "Terminus 12")
+(linum-mode 1)
+(line-number-mode 1)
+(tool-bar-mode -1)
+(setq-default indicate-empty-lines t)
