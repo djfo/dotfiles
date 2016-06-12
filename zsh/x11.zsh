@@ -5,6 +5,7 @@ BUILTIN_DISPLAY=LVDS1
 EXTERNAL_DISPLAY=VGA1
 
 function dual() {
+  xrandr --output $BUILTIN_DISPLAY --auto
   xrandr --output $EXTERNAL_DISPLAY --primary --left-of $BUILTIN_DISPLAY --auto
 }
 
