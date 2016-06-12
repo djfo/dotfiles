@@ -27,6 +27,7 @@ set writebackup
 
 if has("gui_running")
   set guifont=Terminus\ 12
+  colorscheme desert
 endif
 
 " previous/next tab using C-n and C-p
