@@ -46,6 +46,8 @@ link bin bin
 link git/gitconfig .gitconfig
 link git .git
 link vim/vimrc .vimrc
+link vim .vim
+link vim-pathogen/autoload/pathogen.vim .vim/autoload/pathogen.vim
 case `uname` in
   Linux)
     link x11/Xresources .Xresources
