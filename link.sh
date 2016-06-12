@@ -15,7 +15,7 @@ msg() {
 }
 link() {
   if [ -e $2 -a ! -L $2 ]; then
-    err echo "$2 is not a symlink"
+    err "$2 is not a symlink"
   elif [ -L $2 ]; then
     target=`readlink $2`
     if [ $target = $tmp/$1 ]; then
@@ -53,5 +53,6 @@ case `uname` in
     link z/z.sh .zsh/z.sh
     md local
     link color local/color
+    link xmonad .xmonad
     ;;
 esac
