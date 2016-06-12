@@ -1,0 +1,11 @@
+#!/bin/sh
+case `setxkbmap -query | grep layout | cut -d : -f 2 | sed -e 's/[ \t]*//'` in
+  de)
+    echo "set keyboard layout to US"
+    us
+    ;;
+  us)
+    echo "set keyboard layout to DE"
+    de
+    ;;
+esac

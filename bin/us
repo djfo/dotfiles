@@ -7,3 +7,4 @@
 
 SELF=`basename $0`
 setxkbmap -layout $SELF
+xmodmap $HOME/.Xmodmap
