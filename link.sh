@@ -16,6 +16,15 @@ link() {
     echo "linked $2"
   fi
 }
+md() {
+  if [ -d $1 ]; then
+    echo "E: directory $1 already exists"
+  elif [ -f $1 ]; then
+    echo "E: file $1 exists, but is not a directory"
+  else
+    mkdir -p $1
+  fi
+}
 link zsh .zsh
 link zsh/zshrc .zshrc
 link screenrc .screenrc
@@ -29,5 +38,7 @@ case `uname` in
     link x11/Xresources .Xresources
     link x11/Xmodmap .Xmodmap
     link z/z.sh .zsh/z.sh
+    md local
+    link color local/color
     ;;
 esac
