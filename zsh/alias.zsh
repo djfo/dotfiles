@@ -9,6 +9,8 @@ case `uname` in
     alias lc="ls -FC --color=auto"
     alias ll="ls -Fl --color=auto"
 
+    alias xlock="xlock -mode rain"
+
     function my_open() {
       xdg-open $1 >/dev/null 2>/dev/null &
       disown
