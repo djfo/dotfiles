@@ -1,4 +1,5 @@
 #!/bin/sh
 feh --bg-scale /usr/share/backgrounds/f23/default/wide/f23.png
 xcalib -d :0 $HOME/local/color/Monitor_20.07.2012_1_01.icc
+numlockx on
 exec $HOME/.xmonad/xmonad-x86_64-linux*
