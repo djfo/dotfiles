@@ -7,6 +7,10 @@
 
 (load-theme 'tango-dark)
 (set-default-font "Terminus 12")
+
+(setq tab-width 8)
+(setq indent-tabs-mode nil)
+
 (linum-mode 1)
 (line-number-mode 1)
 (tool-bar-mode -1)
