@@ -1,6 +1,7 @@
 (setq inhibit-startup-message t)
 
 (add-to-list 'load-path "/usr/share/emacs/site-lisp/evil")
+(setq evil-want-C-u-scroll t)
 (require 'evil)
 (evil-mode 1)
 
