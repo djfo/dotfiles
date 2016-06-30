@@ -1,17 +1,22 @@
 (setq inhibit-startup-message t)
 
-(add-to-list 'load-path "/usr/share/emacs/site-lisp/evil")
+(when (eq system-type 'darwin) (add-to-list 'load-path "/usr/local/share/emacs/site-lisp/evil"))
+(when (eq system-type 'gnu/linux) (add-to-list 'load-path "/usr/share/emacs/site-lisp/evil"))
 (setq evil-want-C-u-scroll t)
 (require 'evil)
 (evil-mode 1)
 
+(when (display-graphic-p)
+  (progn
+    (tool-bar-mode -1)
+    (when (eq system-type 'darwin) (set-default-font "Menlo 14"))
+    (when (eq system-type 'gnu/linux) (set-default-font "Terminus 12"))))
+
 (load-theme 'tango-dark)
-(set-default-font "Terminus 12")
 
 (setq tab-width 8)
 (setq indent-tabs-mode nil)
 
 (linum-mode 1)
 (line-number-mode 1)
-(tool-bar-mode -1)
 (setq-default indicate-empty-lines t)
