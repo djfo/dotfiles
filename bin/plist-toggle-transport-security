@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+require 'plist'
+key = 'NSAppTransportSecurity'
+path = ARGV.shift
+plist = Plist::parse_xml path
+if plist[key].nil?
+  $stderr.puts "Adding key #{key}"
+  plist[key] = {
+    'NSAllowsArbitraryLoads' => true
+  }
+else
+  $stderr.puts "Removing key #{key}"
+  plist.delete key
+end
+Plist::Emit.save_plist(plist, path)

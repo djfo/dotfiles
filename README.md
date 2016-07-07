@@ -8,3 +8,7 @@ install links to your home directory.
     $ git submodules init
     $ git submodules update
     $ ./link.sh
+
+Some utilities require additional dependencies to be installed:
+
+    $ bundle
