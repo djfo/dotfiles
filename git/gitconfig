@@ -12,6 +12,7 @@
 	tr = log --graph --branches --decorate --remotes
 	tra = log --graph --decorate --all --remotes --branches
 	tro = log --pretty=oneline --abbrev-commit --graph --decorate
+	unstage = reset HEAD --
 [include]
 	path = ~/.git/config
 [push]
