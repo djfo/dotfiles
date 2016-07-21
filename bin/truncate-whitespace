@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ -t 0 ]; then
+  for each in $*; do
+    sed -i "" -e "s/[[:space:]]*$//g" $each
+  done
+else
+  sed -e "s/[[:space:]]*$//g"
+fi
