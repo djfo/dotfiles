@@ -1,7 +1,14 @@
 #!/bin/sh
 if [ -t 0 ]; then
   for each in $*; do
-    sed -i "" -e "s/[[:space:]]*$//g" $each
+    case `uname` in
+      Linux)
+        sed -i -e "s/[[:space:]]*$//g" $each
+        ;;
+      Darwin)
+        sed -i "" -e "s/[[:space:]]*$//g" $each
+        ;;
+    esac
   done
 else
   sed -e "s/[[:space:]]*$//g"
