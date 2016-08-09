@@ -1,0 +1,2 @@
+#!/bin/sh
+awk -f $HOME/bin/titlecase.awk $*
