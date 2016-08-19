@@ -5,3 +5,6 @@ xterm*cursorblink: true
 xterm*visualbell: true
 xterm*utf8: 1
 xterm*cursorColor: green
+
+URxvt.font:xft:Monaco:size=10:antialias=false
+URxvt.boldFont:xft:Monaco:size=10:antialias=false
