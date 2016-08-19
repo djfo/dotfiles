@@ -1,0 +1,2 @@
+#!/bin/sh
+exec urxvt -fn "xft:Monaco:size=10:antialias=false" $*
