@@ -13,7 +13,7 @@
 	tra = log --graph --decorate --all --remotes --branches
 	tro = log --pretty=oneline --abbrev-commit --graph --decorate
 	unstage = reset HEAD --
-[include]
-	path = ~/.git/config
 [push]
 	default = simple
+[include]
+	path = ~/.gitconfig.local

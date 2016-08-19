@@ -44,7 +44,10 @@ link screenrc .screenrc
 link ghci .ghci
 link bin bin
 link git/gitconfig .gitconfig
-link git .git
+if [ ! -e $HOME/.gitconfig.local ]; then
+  cp $tmp/git/gitconfig.local .gitconfig.local
+  msg "a template was copied to $HOME/.gitconfig.local, please edit this file"
+fi
 link vim/vimrc .vimrc
 link vim .vim
 link vim-pathogen/autoload/pathogen.vim .vim/autoload/pathogen.vim
