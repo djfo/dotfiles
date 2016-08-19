@@ -1,0 +1,12 @@
+#!/bin/sh
+if [ $# -lt 3 ]; then
+  echo "usgae: $0 <width> <height> <input>"
+  exit
+fi
+BASE_WIDTH=$1
+BASE_HEIGHT=$2
+for at in 1 2 3; do
+  let w="$BASE_WIDTH*$at"
+  let h="$BASE_HEIGHT*$at"
+  rsvg-convert -w $w -h $h $3 -o `basename $3 .svg`@${at}x.png
+done
