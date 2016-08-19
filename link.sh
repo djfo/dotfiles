@@ -61,4 +61,7 @@ case `uname` in
     link color local/color
     link xmonad .xmonad
     ;;
+  Darwin)
+    link x11-osx/Xdefaults .Xdefaults
+    ;;
 esac
