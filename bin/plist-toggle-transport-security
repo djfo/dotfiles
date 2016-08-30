@@ -1,15 +1,29 @@
 #!/usr/bin/env ruby
+
 require 'plist'
-key = 'NSAppTransportSecurity'
+
 path = ARGV.shift
 plist = Plist::parse_xml path
-if plist[key].nil?
-  $stderr.puts "Adding key #{key}"
-  plist[key] = {
-    'NSAllowsArbitraryLoads' => true
-  }
-else
-  $stderr.puts "Removing key #{key}"
-  plist.delete key
+
+def plist_toggle_key(plist, key, value)
+  if plist[key].nil?
+    $stderr.puts "Adding key #{key}"
+    plist[key] = value
+     else
+    $stderr.puts "Removing key #{key}"
+    plist.delete key
+  end
 end
+
+case File.basename($PROGRAM_NAME)
+when 'plist-toggle-transport-security'
+  plist_toggle_key(plist, 'NSAppTransportSecurity', {
+    'NSAllowsArbitraryLoads' => true
+  })
+when 'plist-toggle-file-sharing'
+  plist_toggle_key(plist, 'UIFileSharingEnabled', true)
+else
+  exit 1
+end
+
 Plist::Emit.save_plist(plist, path)
