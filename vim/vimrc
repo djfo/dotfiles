@@ -8,6 +8,7 @@ set sts=2
 set sw=2
 set ai
 set nu
+set relativenumber
 
 set incsearch
 set ruler
@@ -31,6 +32,9 @@ if has("gui_running")
   set guioptions-=m  "remove menu bar
   set guioptions-=T  "remove toolbar
 endif
+
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
 " previous/next tab using C-n and C-p
 nmap  :tabp<CR>
