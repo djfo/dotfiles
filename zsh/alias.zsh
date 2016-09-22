@@ -25,5 +25,8 @@ case `uname` in
     alias e="mvim"
     alias o="open"
     alias r="open -R"
+
+    alias c="pbcopy"
+    alias p="pbpaste"
     ;;
 esac
