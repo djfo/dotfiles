@@ -1,12 +1,72 @@
-#!/bin/sh
-if [ $# -lt 3 ]; then
-  echo "usgae: $0 <width> <height> <input>"
-  exit
-fi
-BASE_WIDTH=$1
-BASE_HEIGHT=$2
-for at in 1 2 3; do
-  let w="$BASE_WIDTH*$at"
-  let h="$BASE_HEIGHT*$at"
-  rsvg-convert -w $w -h $h $3 -o `basename $3 .svg`@${at}x.png
-done
+#!/usr/bin/ruby
+
+def die(message, code = 1)
+  $stderr.puts message
+  exit code
+end
+
+def get_image_size(path)
+  case `identify #{path}`
+  when /.* ([0-9]+)x([0-9]+) .*/
+    {
+      width: $1.to_i,
+      height: $2.to_i
+    }
+  else
+    nil
+  end
+end
+
+def get_scale_name(name, suffix, scale)
+  case scale
+  when 1
+    "#{name}#{suffix}"
+  else
+    "#{name}@#{scale}x#{suffix}"
+  end
+end
+
+def scale_png(path, filename, suffix)
+  case filename
+  when /([^@]+)@([123])/
+    name = $1
+    orig_scale = $2.to_i
+    die 'Scale must be > 1' unless orig_scale > 1
+    orig_size = get_image_size(path)
+    die 'Could not determine original image size' unless orig_size
+    size = {
+      width: orig_size[:width]/orig_scale,
+      height: orig_size[:height]/orig_scale
+    }
+    (orig_scale - 1).downto(1) do |scale|
+      geometry_param = "#{size[:width]*scale}x#{size[:height]*scale}"
+      cmd = "convert #{path} -resize #{geometry_param} #{get_scale_name(name, suffix, scale)}"
+      puts cmd
+    end
+  else
+    die "Currently only down-scaling of existing @3x or @2x assets is implemented"
+  end
+end
+
+def scale_svg(path, filename, suffix, base_width, base_height)
+  [1, 2, 3].each do |scale|
+    width = base_width*scale
+    height = base_height*scale
+    puts "rsvg-convert -w #{width} -h #{height} \"#{path}\" -o #{get_scale_name(filename, '.png', scale)}"
+  end
+end
+
+while path = ARGV.shift
+  suffix = File.extname(path)
+  filename = File.basename(path, suffix)
+  case suffix
+  when '.png'
+    scale_png(path, filename, suffix)
+  when '.svg'
+    base_width = ARGV.shift.to_i
+    base_height = ARGV.shift.to_i
+    scale_svg(path, filename, suffix, base_width, base_height)
+  else
+    die "Unknown file extension: #{suffix}"
+  end
+end
