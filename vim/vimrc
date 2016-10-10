@@ -33,9 +33,6 @@ if has("gui_running")
   set guioptions-=T  "remove toolbar
 endif
 
-noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
-noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
-
 " previous/next tab using C-n and C-p
 nmap  :tabp<CR>
 nmap  :tabn<CR>
