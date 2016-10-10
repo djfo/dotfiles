@@ -51,3 +51,7 @@ map <c-j> ddp
 nnoremap <space> za
 
 syntax on
+
+let mapleader=","
+"let mapleader="\<Space>"
+noremap <Leader>hey :echo "Hey, ho, let's go!"<cr>
