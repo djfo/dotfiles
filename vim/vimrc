@@ -52,3 +52,7 @@ syntax on
 let mapleader=","
 "let mapleader="\<Space>"
 noremap <Leader>hey :echo "Hey, ho, let's go!"<cr>
+
+vmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a; :Tabularize /::<CR>
+vmap <Leader>a- :Tabularize /-><CR>
