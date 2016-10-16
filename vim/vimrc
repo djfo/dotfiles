@@ -56,3 +56,10 @@ noremap <Leader>hey :echo "Hey, ho, let's go!"<cr>
 vmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a; :Tabularize /::<CR>
 vmap <Leader>a- :Tabularize /-><CR>
+
+" asy
+
+augroup filetypedetect
+au BufNewFile,BufRead *.asy     setf asy
+augroup END
+filetype plugin on
