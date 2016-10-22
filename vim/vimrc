@@ -42,6 +42,7 @@ endif
 nmap  :tabp<CR>
 nmap  :tabn<CR>
 
+set hlsearch
 " hide highlighted search
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
