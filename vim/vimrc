@@ -1,6 +1,8 @@
 execute pathogen#infect()
 
 set nocp
+syntax on
+filetype plugin on
 
 set et
 set ts=8
@@ -47,8 +49,6 @@ map <c-j> ddp
 " open/close fold using <space>
 nnoremap <space> za
 
-syntax on
-
 let mapleader=","
 "let mapleader="\<Space>"
 noremap <Leader>hey :echo "Hey, ho, let's go!"<cr>
@@ -62,4 +62,3 @@ vmap <Leader>a- :Tabularize /-><CR>
 augroup filetypedetect
 au BufNewFile,BufRead *.asy     setf asy
 augroup END
-filetype plugin on
