@@ -28,6 +28,9 @@ set statusline=%<%f\ 0x%02B\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 set nobackup
 set writebackup
 
+set path+=**
+set wildmenu
+
 if has("gui_running")
   set guifont=Terminus\ 12
   colorscheme desert
