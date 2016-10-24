@@ -12,7 +12,6 @@ set autoindent
 set number
 set relativenumber
 
-set incsearch
 set ruler
 
 set backspace=indent,eol,start
@@ -43,9 +42,14 @@ endif
 nmap  :tabp<CR>
 nmap  :tabn<CR>
 
+" search {{{
+
+set incsearch
 set hlsearch
 " hide highlighted search
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
+" }}}
 
 " move link up/down using C-k and C-j
 map <c-k> kddpk
