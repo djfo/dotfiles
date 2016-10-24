@@ -12,8 +12,6 @@ set autoindent
 set number
 set relativenumber
 
-set ruler
-
 set backspace=indent,eol,start
 set wrap
 set linebreak
@@ -21,7 +19,6 @@ set showbreak=…
 set ignorecase
 
 set showcmd
-set ruler
 
 set nobackup
 set writebackup
