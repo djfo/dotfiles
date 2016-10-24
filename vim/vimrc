@@ -1,15 +1,15 @@
 execute pathogen#infect()
 
-set nocp
+set nocompatible
 syntax on
 filetype plugin on
 
-set et
-set ts=8
-set sts=2
-set sw=2
-set ai
-set nu
+set expandtab
+set tabstop=8
+set softtabstop=2
+set shiftwidth=2
+set autoindent
+set number
 set relativenumber
 
 set incsearch
