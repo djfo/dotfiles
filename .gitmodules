@@ -13,3 +13,6 @@
 [submodule "vim/bundle/swift.vim"]
 	path = vim/bundle/swift.vim
 	url = https://github.com/keith/swift.vim
+[submodule "vim/bundle/vim2hs"]
+	path = vim/bundle/vim2hs
+	url = https://github.com/dag/vim2hs
