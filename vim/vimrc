@@ -4,10 +4,11 @@ set nocompatible
 syntax on
 filetype plugin on
 
-set expandtab
 set tabstop=8
+set expandtab
 set softtabstop=2
 set shiftwidth=2
+set shiftround
 set autoindent
 set number
 set relativenumber
