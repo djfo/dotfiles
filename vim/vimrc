@@ -30,7 +30,11 @@ set wildmenu
 set foldmethod=marker
 
 if has("gui_running")
-  set guifont=Terminus\ 12
+  if has("osx")
+    set guifont=Monaco:h14
+  else
+    set guifont=Terminus\ 12
+  endif
   set guioptions-=m  "remove menu bar
   set guioptions-=T  "remove toolbar
 endif
