@@ -35,8 +35,11 @@ if has("gui_running")
   else
     set guifont=Terminus\ 12
   endif
+  set background=light
   set guioptions-=m  "remove menu bar
   set guioptions-=T  "remove toolbar
+else
+  set background=dark
 endif
 
 " previous/next tab using C-n and C-p
