@@ -62,6 +62,9 @@ map <c-j> ddp
 " open/close fold using <space>
 nnoremap <space> za
 
+nnoremap <F2> :set relativenumber!<CR>:set number!<CR>
+nnoremap <F3> :set list!<CR>
+
 let mapleader=","
 "let mapleader="\<Space>"
 noremap <Leader>hey :echo "Hey, ho, let's go!"<cr>
