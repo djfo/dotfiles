@@ -75,6 +75,10 @@ vmap <Leader>ha> :Tabularize /-><CR>
 vmap <Leader>ha: :Tabularize /::<CR>
 vmap <Leader>hs !stylish-haskell<CR>
 
+" Emacs-like beginning and end of file
+imap <c-e> <c-o>$
+imap <c-a> <c-o>^
+
 " asy {{{
 
 augroup filetypedetect
