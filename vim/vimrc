@@ -70,8 +70,10 @@ let mapleader=","
 noremap <Leader>hey :echo "Hey, ho, let's go!"<cr>
 
 vmap <Leader>a= :Tabularize /=<CR>
-vmap <Leader>a: :Tabularize /::<CR>
-vmap <Leader>a- :Tabularize /-><CR>
+vmap <Leader>a: :Tabularize /:<CR>
+vmap <Leader>ha> :Tabularize /-><CR>
+vmap <Leader>ha: :Tabularize /::<CR>
+vmap <Leader>hs !stylish-haskell<CR>
 
 " asy {{{
 
