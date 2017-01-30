@@ -1,0 +1,12 @@
+#!/bin/sh
+gs \
+  -sDEVICE=pdfwrite \
+  -dPDFSETTINGS=/ebook \
+  -dNOPAUSE \
+  -dQUIET \
+  -dBATCH \
+  -sOutputFile=$2 \
+  -dNumRenderingThreads=1 \
+  -c "900000000 setvmthreshold" \
+  -dNOGC \
+  $1
