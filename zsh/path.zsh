@@ -1,4 +1,4 @@
-PATH=/bin:/usr/local/bin:/usr/bin:/sbin:/usr/local/sbin:/usr/sbin
+PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
 PATH=$HOME/bin:$HOME/.cabal/bin:$PATH
 
 case `uname` in
