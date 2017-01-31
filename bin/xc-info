@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+ARGV.each do |path|
+  ext = File.extname(path)
+  case ext
+  when '.xcodeproj'
+    puts `xcodebuild -project "#{path}" -list`
+  when '.xcworkspace'
+    puts `xcodebuild -workspace "#{path}" -list`
+  else
+    $stderr.puts "Unknown file extension: #{ext}"
+    exit 1
+  end
+end
+exit 0
