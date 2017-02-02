@@ -9,6 +9,7 @@
 	f = fetch
 	p = push
 	s = status
+        sb = status -sb
 	t = log --graph --branches --decorate
 	tr = log --graph --branches --decorate --remotes
 	tra = log --graph --decorate --all --remotes --branches
