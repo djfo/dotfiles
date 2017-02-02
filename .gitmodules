@@ -19,3 +19,6 @@
 [submodule "vim/bundle/vimwiki"]
 	path = vim/bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki
+[submodule "vim/bundle/vim-plist"]
+	path = vim/bundle/vim-plist
+	url = https://github.com/darfink/vim-plist
