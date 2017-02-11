@@ -22,3 +22,9 @@
 [submodule "vim/bundle/vim-plist"]
 	path = vim/bundle/vim-plist
 	url = https://github.com/darfink/vim-plist
+[submodule "vim/bundle/ghcmod-vim"]
+	path = vim/bundle/ghcmod-vim
+	url = https://github.com/eagletmt/ghcmod-vim
+[submodule "vim/bundle/vimproc.vim"]
+	path = vim/bundle/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim
