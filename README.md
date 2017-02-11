@@ -12,3 +12,9 @@ install links to your home directory.
 Some utilities require additional dependencies to be installed:
 
     $ bundle
+
+## Vim
+
+Install native extension for `vimproc` plugin
+
+    :VimProcInstall
