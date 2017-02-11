@@ -76,6 +76,8 @@ vmap <Leader>ha> :Tabularize /-><CR>
 vmap <Leader>ha: :Tabularize /::<CR>
 vmap <Leader>hs !stylish-haskell<CR>
 map <Leader>ht :GhcModType<CR>
+map <Leader>hc :GhcModCheck<CR>
+map <Leader>hl :GhcModLint<CR>
 
 " Emacs-like beginning and end of file
 imap <c-e> <c-o>$
