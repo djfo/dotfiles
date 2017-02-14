@@ -52,6 +52,7 @@ link vim/vimrc .vimrc
 link vim .vim
 link vim-pathogen/autoload/pathogen.vim .vim/autoload/pathogen.vim
 link emacs/emacs .emacs
+link xmonad .xmonad
 case `uname` in
   Linux)
     link x11/Xresources .Xresources
@@ -59,7 +60,6 @@ case `uname` in
     link z/z.sh .zsh/z.sh
     md local
     link color local/color
-    link xmonad .xmonad
     ;;
   Darwin)
     link x11-osx/Xdefaults .Xdefaults
