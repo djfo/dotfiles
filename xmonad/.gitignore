@@ -1,5 +1,7 @@
 # xmonad
 *.errors
+xmonad-x86_64-darwin
+
 # ghc
 *.hi
 *.o
