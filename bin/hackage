@@ -1,0 +1,20 @@
+#!/bin/sh
+
+case `uname` in
+  Darwin)
+    open_url() {
+      open -a Safari $1
+    }
+    ;;
+  *)
+    open_url() {
+      echo "error: open_url not defined on `uname`" >&2
+    }
+    ;;
+esac
+
+if [ $# -eq 0 ]; then
+  open_url https://hackage.haskell.org/package
+else
+  open_url https://hackage.haskell.org/package/$1
+fi
