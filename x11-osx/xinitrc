@@ -1,0 +1,3 @@
+#!/bin/sh
+xquartz-wm --only-proxy &
+exec $HOME/.xmonad/xmonad-x86_64-darwin

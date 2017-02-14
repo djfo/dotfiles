@@ -63,5 +63,6 @@ case `uname` in
     ;;
   Darwin)
     link x11-osx/Xdefaults .Xdefaults
+    link x11-osx/xinitrc .xinitrc
     ;;
 esac
