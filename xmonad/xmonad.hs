@@ -1,5 +1,7 @@
+module Main where
+
 import XMonad
-import XMonad.Util.CustomKeys
+import XMonad.Util.CustomKeys -- xmonad-contrib
 
 main :: IO ()
 main =
