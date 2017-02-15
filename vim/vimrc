@@ -78,6 +78,7 @@ vmap <Leader>ha: :Tabularize /::<CR>
 vmap <Leader>hs !stylish-haskell<CR>
 map <Leader>ht :GhcModType<CR>
 map <Leader>hc :GhcModCheck<CR>
+map <Leader>hC :GhcModTypeClear<CR>
 map <Leader>hl :GhcModLint<CR>
 map <Leader>n :cn<CR>
 map <Leader>p :cp<CR>
