@@ -6,7 +6,7 @@ EXTERNAL_DISPLAY=VGA1
 
 function dual() {
   xrandr --output $BUILTIN_DISPLAY --auto
-  xrandr --output $EXTERNAL_DISPLAY --primary --left-of $BUILTIN_DISPLAY --auto
+  xrandr --output $EXTERNAL_DISPLAY --primary --right-of $BUILTIN_DISPLAY --auto
 }
 
 function mirror() {
