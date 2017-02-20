@@ -1,0 +1,44 @@
+#!/usr/bin/env ruby
+
+require 'json'
+
+def open_url(url)
+  `open -a Safari #{url}`
+end
+
+def partition_args(args=ARGV)
+  args.partition { |arg| arg[0] == '-' }
+end
+
+partitions = partition_args
+$flags = partitions[0]
+$args = partitions[1]
+
+def print_pair(key, value)
+  if $flags.include? '-m'
+    puts "- [#{key}](#{value})"
+  else
+    puts "#{key}\t#{value}"
+  end
+end
+
+index = JSON.parse(`curl -s http://api.swiftdoc.org/urls`)
+
+if $flags.include? '-q'
+  $args.each do |query|
+    index.each do |key, value|
+      r = Regexp.new(query, $flags.include?('-i') ? Regexp::IGNORECASE : 0)
+      print_pair(key, value) if r =~ key
+    end
+  end
+else
+  $args.each do |arg|
+    if url = index[arg]
+      open_url url
+    else
+      $stderr.puts "'#{arg}' not found in index"
+    end
+  end
+
+  index.map { |k, v| print_pair(k, v) } if $args.empty?
+end
