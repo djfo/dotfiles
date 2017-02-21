@@ -80,6 +80,7 @@ map <Leader>ht :GhcModType<CR>
 map <Leader>hc :GhcModCheck<CR>
 map <Leader>hC :GhcModTypeClear<CR>
 map <Leader>hl :GhcModLint<CR>
+map <Leader>M :make<CR>
 map <Leader>n :cn<CR>
 map <Leader>p :cp<CR>
 
