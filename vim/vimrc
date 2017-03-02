@@ -133,3 +133,7 @@ set statusline=%!MyStatusLine()
 set laststatus=2
 
 " }}}
+
+" zip files in disguise {{{
+au BufReadCmd *.jar,*.xpi,*.ipa call zip#Browse(expand("<amatch>"))
+" }}}
