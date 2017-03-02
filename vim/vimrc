@@ -71,15 +71,16 @@ let mapleader=","
 "let mapleader="\<Space>"
 noremap <Leader>hey :echo "Hey, ho, let's go!"<cr>
 
-vmap <Leader>a= :Tabularize /=<CR>
+" sort -f -t \> -k 2
 vmap <Leader>a: :Tabularize /:<CR>
-vmap <Leader>ha> :Tabularize /-><CR>
+vmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>ha: :Tabularize /::<CR>
-vmap <Leader>hs !stylish-haskell<CR>
-map <Leader>ht :GhcModType<CR>
+vmap <Leader>ha> :Tabularize /-><CR>
 map <Leader>hc :GhcModCheck<CR>
 map <Leader>hC :GhcModTypeClear<CR>
 map <Leader>hl :GhcModLint<CR>
+vmap <Leader>hs !stylish-haskell<CR>
+map <Leader>ht :GhcModType<CR>
 map <Leader>M :make<CR>
 map <Leader>n :cn<CR>
 map <Leader>p :cp<CR>
