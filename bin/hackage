@@ -8,7 +8,7 @@ case `uname` in
     ;;
   *)
     open_url() {
-      echo "error: open_url not defined on `uname`" >&2
+      xdg-open $1
     }
     ;;
 esac
