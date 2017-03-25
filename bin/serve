@@ -1,0 +1,6 @@
+#!/bin/sh
+DIR=.
+if [ $# -eq 1 ]; then
+  DIR=$1
+fi
+ruby -run -e httpd $DIR -p 9090
