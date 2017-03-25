@@ -1,5 +1,12 @@
 PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
-PATH=$HOME/bin:$HOME/.cabal/bin:$PATH
+
+PATH=$HOME/bin:$PATH
+
+# cabal
+PATH=$HOME/.cabal/bin:$PATH
+
+# stack
+PATH=$HOME/.local/bin:$PATH
 
 case `uname` in
   Darwin)
