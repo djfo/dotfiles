@@ -28,5 +28,9 @@ case `uname` in
 
     alias c="pbcopy"
     alias p="pbpaste"
+
+    function man_() {
+      man $* | col -b
+    }
     ;;
 esac
