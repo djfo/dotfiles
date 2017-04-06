@@ -31,3 +31,6 @@
 [submodule "vim/bundle/undotree"]
 	path = vim/bundle/undotree
 	url = https://github.com/mbbill/undotree.git
+[submodule "vim/bundle/idris-vim"]
+	path = vim/bundle/idris-vim
+	url = https://github.com/idris-hackers/idris-vim
