@@ -29,6 +29,8 @@ set wildmenu
 
 set foldmethod=marker
 
+set cm=blowfish2
+
 if has("gui_running")
   if has("osx")
     set guifont=Monaco:h14
