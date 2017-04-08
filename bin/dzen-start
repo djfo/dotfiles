@@ -1,6 +1,0 @@
-#!/bin/sh
-while true; do
-  date                # output goes to the title window
-  dmesg | tail -n 10  # output goes to the slave window
-  sleep 1
-done | dzen2 -l 10 -u
