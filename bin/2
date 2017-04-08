@@ -1,2 +1,0 @@
-#!/bin/sh
-pr -`basename $0` -t $*
