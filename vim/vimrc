@@ -108,6 +108,13 @@ let g:netrw_altv=1
 
 " }}}
 
+let g:ctrlp_map = '<c-o>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" ctrlp {{{
+
+" }}}
+
 " MyStatusLine() {{{
 
 function! MyStatusLine()
