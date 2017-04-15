@@ -9,6 +9,7 @@ set expandtab
 set softtabstop=2
 set shiftwidth=2
 set shiftround
+
 set autoindent
 set number
 set relativenumber
@@ -44,9 +45,9 @@ else
   set background=dark
 endif
 
-" previous/next tab using C-n and C-p
-nmap  :tabp<CR>
-nmap  :tabn<CR>
+" next/previous tab using C-n and C-p
+nmap  :tabn<CR>
+nmap  :tabp<CR>
 
 " search {{{
 
