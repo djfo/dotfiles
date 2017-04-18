@@ -77,6 +77,7 @@ noremap <Leader>hey :echo "Hey, ho, let's go!"<cr>
 " sort -f -t \> -k 2
 vmap <Leader>a: :Tabularize /:<CR>
 vmap <Leader>a= :Tabularize /=<CR>
+map <Leader>du :diffupdate<CR>
 vmap <Leader>ha: :Tabularize /::<CR>
 vmap <Leader>ha> :Tabularize /-><CR>
 map <Leader>hc :GhcModCheck<CR>
