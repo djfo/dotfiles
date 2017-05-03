@@ -50,12 +50,10 @@ nmap  :tabn<CR>
 nmap  :tabp<CR>
 
 " search {{{
-
 set incsearch
 set hlsearch
 " hide highlighted search
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
-
 " }}}
 
 " move link up/down using C-k and C-j
@@ -97,31 +95,24 @@ imap <c-e> <c-o>$
 imap <c-a> <c-o>^
 
 " asy {{{
-
 augroup filetypedetect
 au BufNewFile,BufRead *.asy     setf asy
 augroup END
-
 " }}}
 
 " netrw {{{
-
 let g:netrw_banner=0
 let g:netrw_browse_split=4
 let g:netrw_altv=1
 "let g:netrw_liststyle=3
-
 " }}}
 
 " ctrlp {{{
-
 let g:ctrlp_map = '<c-o>'
 let g:ctrlp_cmd = 'CtrlP'
-
 " }}}
 
 " MyStatusLine() {{{
-
 function! MyStatusLine()
     let statusline = ""
     " Filename (F -> full, f -> relative)
@@ -142,11 +133,9 @@ function! MyStatusLine()
     let statusline .= "| %P/%L"
     return statusline
 endfunction
-
 "set statusline=%<%f\ 0x%02B\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 set statusline=%!MyStatusLine()
 set laststatus=2
-
 " }}}
 
 " zip files in disguise {{{
