@@ -69,6 +69,7 @@ nnoremap <F2> :set relativenumber!<CR>:set number!<CR>
 nnoremap <F3> :set list!<CR>
 nnoremap <F4> :UndotreeToggle<CR>
 nnoremap <F5> :syntax sync fromstart<CR>
+nnoremap <F6> :call ToggleEllipsisMacros()<CR>
 
 let mapleader=","
 "let mapleader="\<Space>"
@@ -150,4 +151,30 @@ set laststatus=2
 
 " zip files in disguise {{{
 au BufReadCmd *.jar,*.xpi,*.ipa call zip#Browse(expand("<amatch>"))
+" }}}
+
+" Ellipsis-macros {{{
+function! InstallEllipsisMacros()
+  imap ... …
+  imap -.. ⋯
+  imap \.. ⋱
+  imap /.. ⋰
+  imap \|.. ⋮
+  echo "Installed ellipsis macros..."
+endfunction
+function! UninstallEllipsisMacros()
+  iunmap ...
+  iunmap -..
+  iunmap \..
+  iunmap /..
+  iunmap \|..
+  echo "Uninstalled ellipsis macros..."
+endfunction
+function! ToggleEllipsisMacros()
+  if mapcheck("...", "i") == ""
+    call InstallEllipsisMacros()
+  else
+    call UninstallEllipsisMacros()
+  endif
+endfunction
 " }}}
