@@ -11,7 +11,7 @@ install links to your home directory.
 
 Some utilities require additional dependencies to be installed:
 
-    $ bundle
+    $ bundle install
 
 ## Vim
 
