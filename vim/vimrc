@@ -86,7 +86,7 @@ map <Leader>hC :GhcModTypeClear<CR>
 map <Leader>hg :GhcModSigCodegen<CR>
 map <Leader>hl :GhcModLint<CR>
 vmap <Leader>hs !stylish-haskell<CR>
-map <Leader>hs :GhcModSplitFunCase<CR>
+map <Leader>hS :GhcModSplitFunCase<CR>
 map <Leader>ht :GhcModType<CR>
 map <Leader>M :make<CR>
 map <Leader>n :cn<CR>
