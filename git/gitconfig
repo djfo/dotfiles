@@ -15,6 +15,7 @@
 	tra = log --graph --decorate --all --remotes --branches
 	tro = log --pretty=oneline --abbrev-commit --graph --decorate
 	unstage = reset HEAD --
+        wd = diff --word-diff=color
 	who = shortlog -s
 [push]
 	default = simple
