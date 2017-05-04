@@ -84,6 +84,7 @@ vmap <Leader>ha> :Tabularize /-><CR>
 map <Leader>hc :GhcModCheck<CR>
 map <Leader>hC :GhcModTypeClear<CR>
 map <Leader>hg :GhcModSigCodegen<CR>
+map <Leader>hi :GhcModInfo<CR>
 map <Leader>hl :GhcModLint<CR>
 vmap <Leader>hs !stylish-haskell<CR>
 map <Leader>hS :GhcModSplitFunCase<CR>
