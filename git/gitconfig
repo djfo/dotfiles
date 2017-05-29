@@ -3,19 +3,20 @@
 [alias]
 	b = branch
 	co = checkout
-        cp = cherry-pick
+	cp = cherry-pick
 	d = diff
 	dc = diff --cached
 	f = fetch
 	p = push
 	s = status
-        sb = status -sb
+	sb = status -sb
 	t = log --graph --branches --decorate
 	tr = log --graph --branches --decorate --remotes
 	tra = log --graph --decorate --all --remotes --branches
 	tro = log --pretty=oneline --abbrev-commit --graph --decorate
 	unstage = reset HEAD --
-        wd = diff --word-diff=color
+	wc = whatchanged
+	wd = diff --word-diff=color
 	who = shortlog -s
 [push]
 	default = simple
