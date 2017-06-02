@@ -68,6 +68,8 @@ nnoremap <F3> :set list!<CR>
 nnoremap <F4> :UndotreeToggle<CR>
 nnoremap <F5> :syntax sync fromstart<CR>
 nnoremap <F6> :call ToggleEllipsisMacros()<CR>
+" rotate tab size
+nnoremap <silent> <F7> :let &ts=(&ts*2 > 16 ? 2 : &ts*2)<cr>:echo "tabstop:" . &ts<cr>
 
 let mapleader=","
 "let mapleader="\<Space>"
