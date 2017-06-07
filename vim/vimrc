@@ -34,7 +34,7 @@ set cm=blowfish2
 
 if has("gui_running")
   if has("osx")
-    set guifont=Monaco:h14
+    set guifont=Menlo:h14
   else
     set guifont=Terminus\ 12
   endif
