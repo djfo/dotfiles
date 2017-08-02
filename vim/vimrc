@@ -82,6 +82,7 @@ vmap <Leader>a= :Tabularize /=<CR>
 map <Leader>do :diffoff<CR>
 map <Leader>dt :diffthis<CR>
 map <Leader>du :diffupdate<CR>
+map <Leader>gd :Gdiff<CR>
 vmap <Leader>ha: :Tabularize /::<CR>
 vmap <Leader>ha> :Tabularize /-><CR>
 map <Leader>hc :GhcModCheck<CR>
