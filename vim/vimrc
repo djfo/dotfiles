@@ -31,6 +31,7 @@ set wildmenu
 set foldmethod=marker
 
 set cm=blowfish2
+set dictionary+=/usr/share/dict/words
 
 if has("gui_running")
   if has("osx")
