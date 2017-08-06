@@ -18,3 +18,12 @@ Some utilities require additional dependencies to be installed:
 Install native extension for `vimproc` plugin
 
     :VimProcInstall
+
+Install packages for Haskell development
+
+    $ stack install <package>
+
+Packages:
+
+- ghc-mod
+- stylish-haskell
