@@ -57,7 +57,7 @@ set hlsearch
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 " }}}
 
-" move link up/down using C-k and C-j
+" move line up/down using C-k and C-j
 map <c-k> kddpk
 map <c-j> ddp
 
