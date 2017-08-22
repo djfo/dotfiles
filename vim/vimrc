@@ -19,6 +19,7 @@ set wrap
 set linebreak
 set showbreak=…
 set ignorecase
+set smartcase
 
 set showcmd
 
