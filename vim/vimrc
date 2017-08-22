@@ -13,6 +13,9 @@ set shiftround
 set autoindent
 set number
 set relativenumber
+"set hidden
+"set splitright
+"set gdefault
 
 set backspace=indent,eol,start
 set wrap
