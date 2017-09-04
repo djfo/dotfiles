@@ -1,1 +1,1 @@
-setlocal makeprg=dot\ -Tpdf\ -O\ %
+setlocal makeprg=dot\ -Tpdf\ %\ >\ %:r.pdf
