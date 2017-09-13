@@ -11,7 +11,7 @@
 	p = push
 	s = status
 	sb = status -sb
-	t = log --graph --branches --decorate
+	t = log --graph --decorate
 	tr = log --graph --branches --decorate --remotes
 	tra = log --graph --decorate --all --remotes --branches
 	tro = log --pretty=oneline --abbrev-commit --graph --decorate
