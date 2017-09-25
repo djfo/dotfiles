@@ -10,7 +10,12 @@ PATH=$HOME/.local/bin:$PATH
 
 case `uname` in
   Darwin)
-    PATH=/usr/local/texlive/2016/bin/x86_64-darwin:$PATH
+    TEXLIVE=/usr/local/texlive
+    if [ -d $TEXLIVE ]; then
+      TEXLIVE_VERSION=`basename $(ls $TEXLIVE | tail -1)`
+      PATH=$TEXLIVE/$TEXLIVE_VERSION/bin/x86_64-darwin:$PATH
+    fi
+
     PATH=$HOME/Library/Haskell/bin:$PATH
     ;;
 esac
