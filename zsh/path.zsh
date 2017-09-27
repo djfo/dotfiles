@@ -12,7 +12,7 @@ case `uname` in
   Darwin)
     TEXLIVE=/usr/local/texlive
     if [ -d $TEXLIVE ]; then
-      TEXLIVE_VERSION=`basename $(ls $TEXLIVE | tail -1)`
+      TEXLIVE_VERSION=`basename $(ls -d $TEXLIVE/2* | tail -1)`
       PATH=$TEXLIVE/$TEXLIVE_VERSION/bin/x86_64-darwin:$PATH
     fi
 
