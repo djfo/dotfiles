@@ -179,3 +179,9 @@ function! ToggleEllipsisMacros()
   endif
 endfunction
 " }}}
+
+" Break up inserts into smaller undo-chunks
+inoremap . .<c-g>u
+inoremap ? ?<c-g>u
+inoremap ! !<c-g>u
+inoremap , ,<c-g>u
