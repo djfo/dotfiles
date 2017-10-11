@@ -19,3 +19,5 @@ case `uname` in
     PATH=$HOME/Library/Haskell/bin:$PATH
     ;;
 esac
+
+export GOPATH=$HOME/go
