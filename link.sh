@@ -41,6 +41,7 @@ md() {
 link zsh .zsh
 link zsh/zshrc .zshrc
 link screenrc .screenrc
+link tmux.conf .tmux.conf
 link ghci .ghci
 link bin bin
 link git/gitconfig .gitconfig
