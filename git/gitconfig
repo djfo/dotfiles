@@ -8,6 +8,7 @@
 	d = diff
 	dc = diff --cached
 	f = fetch
+	ls = log --pretty=oneline --abbrev-commit
 	p = push
 	s = status
 	sb = status -sb
