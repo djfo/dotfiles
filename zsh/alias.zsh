@@ -2,6 +2,7 @@ for cmd in rm cp mv; alias $cmd="$cmd -i"
 
 alias g="git"
 alias vi="vim"
+alias d="darcs"
 
 case `uname` in
   Linux)
