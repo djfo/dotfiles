@@ -189,3 +189,5 @@ inoremap , ,<c-g>u
 " :h :DiffOrig
 command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
   \ | wincmd p | diffthis
+
+au BufNewFile,BufRead *.podspec,Podfile setf ruby
