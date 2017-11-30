@@ -67,3 +67,4 @@ case `uname` in
     link x11-osx/xinitrc .xinitrc
     ;;
 esac
+link mailcap .mailcap
