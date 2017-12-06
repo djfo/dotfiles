@@ -41,11 +41,13 @@ if has("gui_running")
   if has("osx")
     set guifont=Menlo:h14
   else
-    set guifont=Terminus\ 12
+    "set guifont=Consolas\ 12
+    set guifont=xos4\ Terminus\ 12
   endif
 
   colorscheme solarized
   let g:solarized_hitrail=1
+  let g:solarized_visibility=low
   set background=dark
 else
   set background=dark
@@ -73,7 +75,7 @@ nnoremap <F2> :set relativenumber!<CR>:set number!<CR>
 nnoremap <F3> :set list!<CR>
 nnoremap <F4> :UndotreeToggle<CR>
 nnoremap <F5> :syntax sync fromstart<CR>
-nnoremap <F6> :call ToggleEllipsisMacros()<CR>
+nnoremap <F6> :set cuc!<CR>
 " rotate tab size
 nnoremap <silent> <F7> :let &ts=(&ts*2 > 8 ? 2 : &ts*2)<cr>:echo "tabstop:" . &ts<cr>
 
@@ -153,32 +155,6 @@ set laststatus=2
 
 " zip files in disguise {{{
 au BufReadCmd *.jar,*.xpi,*.ipa call zip#Browse(expand("<amatch>"))
-" }}}
-
-" Ellipsis-macros {{{
-function! InstallEllipsisMacros()
-  imap ... …
-  imap -.. ⋯
-  imap \.. ⋱
-  imap /.. ⋰
-  imap \|.. ⋮
-  echo "Installed ellipsis macros..."
-endfunction
-function! UninstallEllipsisMacros()
-  iunmap ...
-  iunmap -..
-  iunmap \..
-  iunmap /..
-  iunmap \|..
-  echo "Uninstalled ellipsis macros..."
-endfunction
-function! ToggleEllipsisMacros()
-  if mapcheck("...", "i") == ""
-    call InstallEllipsisMacros()
-  else
-    call UninstallEllipsisMacros()
-  endif
-endfunction
 " }}}
 
 " Break up inserts into smaller undo-chunks
