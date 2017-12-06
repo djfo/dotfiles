@@ -2,4 +2,4 @@
 feh --bg-scale /usr/share/backgrounds/f24/default/wide/f24.png
 xcalib -d :0 $HOME/local/color/Monitor_20.07.2012_1_01.icc
 numlockx on
-exec $HOME/.xmonad/xmonad-x86_64-linux*
+exec $HOME/.xmonad/xmonad-x86_64-linux
