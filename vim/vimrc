@@ -45,6 +45,7 @@ if has("gui_running")
   endif
 
   colorscheme solarized
+  let g:solarized_hitrail=1
   set background=dark
 else
   set background=dark
