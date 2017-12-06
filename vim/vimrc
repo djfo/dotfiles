@@ -39,7 +39,7 @@ set dictionary+=/usr/share/dict/words
 
 if has("gui_running")
   if has("osx")
-    set guifont=Menlo:h14
+    set guifont=Monaco:h14
   else
     "set guifont=Consolas\ 12
     set guifont=xos4\ Terminus\ 12
