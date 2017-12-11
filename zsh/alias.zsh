@@ -17,6 +17,8 @@ case `uname` in
       disown $!
     }
     alias o="my_open"
+
+    alias mvim="gvim"
     ;;
   Darwin)
     alias ls="ls -GF1"
@@ -33,5 +35,7 @@ case `uname` in
     function man_() {
       man $* | col -b
     }
+
+    alias gvim="mvim"
     ;;
 esac
