@@ -1,4 +1,5 @@
 #!/bin/sh
+xrdb -merge /home/david/.Xresources
 xsetroot -solid darkcyan
 xcalib -d :0 $HOME/local/color/Monitor_20.07.2012_1_01.icc
 numlockx on
