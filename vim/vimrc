@@ -47,7 +47,6 @@ if has("gui_running")
 
   colorscheme solarized
   let g:solarized_hitrail=1
-  let g:solarized_visibility=low
   set background=dark
 else
   set background=dark
