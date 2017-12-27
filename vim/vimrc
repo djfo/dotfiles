@@ -121,11 +121,6 @@ let g:netrw_altv=1
 "let g:netrw_liststyle=3
 " }}}
 
-" ctrlp {{{
-let g:ctrlp_map = '<c-o>'
-let g:ctrlp_cmd = 'CtrlP'
-" }}}
-
 " MyStatusLine() {{{
 function! MyStatusLine()
     let statusline = ""
