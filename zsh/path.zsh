@@ -17,6 +17,8 @@ case `uname` in
     fi
 
     PATH=$HOME/Library/Haskell/bin:$PATH
+
+    PATH=/usr/X11/bin:$PATH
     ;;
 esac
 
