@@ -1,21 +1,29 @@
 module Main where
 
+import           System.Environment
+import           System.FilePath
 import           XMonad
 import           XMonad.Hooks.DynamicLog
 import           XMonad.Hooks.ManageDocks
+import           XMonad.Layout.BinarySpacePartition
+import           XMonad.Layout.CenteredMaster
 import           XMonad.Util.CustomKeys
 import           XMonad.Util.Run
 
 main :: IO ()
 main =
   do
-    h <- spawnPipe "dzen2 -dock"
+    exeDir <- takeDirectory <$> getExecutablePath
+    envPath <- lookupEnv "PATH"
+    setEnv "PATH" $ maybe exeDir (\p -> exeDir ++ ":" ++ p) envPath
+
+    h <- spawnPipe "dzen2 -dock -xs 2"
 
     xmonad $ docks def {
       terminal = "gnome-terminal"
     , keys = customKeys delkeys inskeys
     , logHook = dynamicLogWithPP $ def { ppOutput = hPutStrLn h }
-    , layoutHook = avoidStruts $ layoutHook def
+    , layoutHook = avoidStruts myLayout
     }
   where
     delkeys :: XConfig l -> [(KeyMask, KeySym)]
@@ -26,3 +34,10 @@ main =
       [ ((modm .|. shiftMask, xK_space), spawn "cycle-kbd-layout")
       , ((modm .|. controlMask, xK_b), sendMessage ToggleStruts)
       ]
+
+myLayout = tiled ||| Mirror tiled ||| Full ||| emptyBSP -- (centerMaster Full)
+  where
+    tiled = Tall nmaster delta ratio
+    nmaster = 1
+    ratio = 1/2
+    delta = 3/100
