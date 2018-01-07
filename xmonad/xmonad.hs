@@ -2,6 +2,7 @@ module Main where
 
 import           System.Environment
 import           System.FilePath
+import           System.Info (os)
 import           XMonad
 import           XMonad.Hooks.DynamicLog
 import           XMonad.Hooks.ManageDocks
@@ -17,23 +18,33 @@ main =
     envPath <- lookupEnv "PATH"
     setEnv "PATH" $ maybe exeDir (\p -> exeDir ++ ":" ++ p) envPath
 
-    h <- spawnPipe "dzen2 -dock -xs 2"
+    myLogHook <- initLogHook
 
     xmonad $ docks def {
-      terminal = "gnome-terminal"
+      terminal = myTerminal
     , keys = customKeys delkeys inskeys
-    , logHook = dynamicLogWithPP $ def { ppOutput = hPutStrLn h }
+    , logHook = myLogHook
     , layoutHook = avoidStruts myLayout
     }
   where
     delkeys :: XConfig l -> [(KeyMask, KeySym)]
     delkeys XConfig {modMask = modm} =
       [ (modm .|. shiftMask, xK_space) ]
+
     inskeys :: XConfig l -> [((KeyMask, KeySym), X ())]
     inskeys conf@(XConfig {modMask = modm}) =
       [ ((modm .|. shiftMask, xK_space), spawn "cycle-kbd-layout")
       , ((modm .|. controlMask, xK_b), sendMessage ToggleStruts)
       ]
+
+    myTerminal
+      | os == "darwin" = "/usr/local/bin/urxvt"
+      | otherwise      = "gnome-terminal"
+
+    initLogHook
+      | os == "darwin" = return $ logHook def
+      | otherwise = do h <- spawnPipe "dzen2 -dock -xs 2"
+                       return $ dynamicLogWithPP $ def { ppOutput = hPutStrLn h }
 
 myLayout = tiled ||| Mirror tiled ||| Full ||| emptyBSP -- (centerMaster Full)
   where
