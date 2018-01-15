@@ -10,6 +10,9 @@ autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select=4
 
+DIRSTACKSIZE=8
+setopt autopushd pushdminus
+
 source ~/.zsh/alias.zsh
 source ~/.zsh/le.zsh
 source ~/.zsh/path.zsh
