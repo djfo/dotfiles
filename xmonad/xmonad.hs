@@ -6,8 +6,6 @@ import qualified System.Info              as I
 import           XMonad
 import           XMonad.Hooks.DynamicLog
 import           XMonad.Hooks.ManageDocks
-import           XMonad.Layout.BinarySpacePartition
-import           XMonad.Layout.CenteredMaster
 import           XMonad.Util.CustomKeys
 import           XMonad.Util.Run
 
@@ -32,7 +30,7 @@ main =
       [ (modm .|. shiftMask, xK_space) ]
 
     inskeys :: XConfig l -> [((KeyMask, KeySym), X ())]
-    inskeys conf@(XConfig {modMask = modm}) =
+    inskeys (XConfig {modMask = modm}) =
       [ ((modm .|. shiftMask, xK_space), spawn "cycle-kbd-layout")
       , ((modm .|. controlMask, xK_b), sendMessage ToggleStruts)
       ]
@@ -46,7 +44,8 @@ main =
       | otherwise = do h <- spawnPipe "dzen2 -dock -xs 2"
                        return $ dynamicLogWithPP $ def { ppOutput = hPutStrLn h }
 
-myLayout = tiled ||| Mirror tiled ||| Full ||| emptyBSP -- (centerMaster Full)
+myLayout :: Choose Tall (Choose (Mirror Tall) Full) a
+myLayout = tiled ||| Mirror tiled ||| Full
   where
     tiled = Tall nmaster delta ratio
     nmaster = 1
