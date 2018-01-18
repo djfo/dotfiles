@@ -70,8 +70,17 @@ map <c-j> ddp
 " open/close fold using <space>
 nnoremap <space> za
 
+function! ToggleList()
+  exec('set list!')
+  if &colorcolumn==""
+    exec('set colorcolumn=+1')
+  else
+    exec('set colorcolumn=""')
+  endif
+endfunction
+
 nnoremap <F2> :set relativenumber!<CR>:set number!<CR>
-nnoremap <F3> :set list!<CR>
+nnoremap <F3> :call ToggleList()<CR>
 nnoremap <F4> :UndotreeToggle<CR>
 nnoremap <F5> :syntax sync fromstart<CR>
 nnoremap <F6> :set cuc!<CR>
