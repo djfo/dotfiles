@@ -2,7 +2,7 @@ module Main where
 
 import           System.Environment
 import           System.FilePath
-import           System.Info (os)
+import qualified System.Info              as I
 import           XMonad
 import           XMonad.Hooks.DynamicLog
 import           XMonad.Hooks.ManageDocks
@@ -38,11 +38,11 @@ main =
       ]
 
     myTerminal
-      | os == "darwin" = "/usr/local/bin/urxvt"
-      | otherwise      = "gnome-terminal"
+      | osDarwin  = "/usr/local/bin/urxvt"
+      | otherwise = "gnome-terminal"
 
     initLogHook
-      | os == "darwin" = return $ logHook def
+      | osDarwin  = return $ logHook def
       | otherwise = do h <- spawnPipe "dzen2 -dock -xs 2"
                        return $ dynamicLogWithPP $ def { ppOutput = hPutStrLn h }
 
@@ -52,3 +52,6 @@ myLayout = tiled ||| Mirror tiled ||| Full ||| emptyBSP -- (centerMaster Full)
     nmaster = 1
     ratio = 1/2
     delta = 3/100
+
+osDarwin :: Bool
+osDarwin = I.os == "darwin"
