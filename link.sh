@@ -54,9 +54,9 @@ link vim .vim
 link vim-pathogen/autoload/pathogen.vim .vim/autoload/pathogen.vim
 link emacs/emacs .emacs
 link xmonad .xmonad
+link x11/Xresources .Xresources
 case `uname` in
   Linux)
-    link x11/Xresources .Xresources
     link x11/Xmodmap .Xmodmap
     link z/z.sh .zsh/z.sh
     md local
