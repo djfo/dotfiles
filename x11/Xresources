@@ -8,6 +8,11 @@ xterm*cursorColor: green
 
 URxvt.font:xft:Monaco:size=10:antialias=false
 URxvt.boldFont:xft:Monaco:size=10:antialias=false
+URxvt.foreground:gray
+URxvt.background:black
+URxvt.cursorColor:green
+URxvt.cursorblink:true
+URxvt.utf8: 1
 
 dzen2.font: -xos4-terminus-*-*-*-*-16-*-*-*-*-*-*-*
 dzen2.foreground: #22ee11
