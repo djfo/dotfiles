@@ -1,13 +1,12 @@
+{-# OPTIONS_GHC -Wall #-}
+
 module Main where
 
 import           Control.Concurrent
-import           Control.Monad
-import           Data.Time
-import           System.IO          (hGetLine)
+import           Data.List          (find, isInfixOf)
+import           System.IO          (hGetContents)
 import           System.Process
 import           XMonad.Util.Run
-import Data.List (find)
-import Text.Read (readMaybe)
 
 main :: IO ()
 main =
@@ -24,6 +23,7 @@ data CPULoad
   }
   deriving (Eq, Ord, Show)
 
+pause :: IO ()
 pause = threadDelay $ 1000*1000
 
 monitorCPULoad :: (Float -> IO ()) -> CPULoad -> IO ()
@@ -47,3 +47,21 @@ getCPULoad = do
       let wait = sum [values !! i | i <- [3, 4]] :: Int
       return $ CPULoad total wait
     Nothing -> error "getCPULoad"
+
+getBatteryPercentage :: IO String
+getBatteryPercentage =
+  do
+    (_, Just hOut, _, _) <- createProcess upower'
+    out <- hGetContents hOut
+    let p = ("percentage" `isInfixOf`)
+    case find p (lines out) of
+      Just line -> return $ last (words line)
+      Nothing -> error "getBatteryPercentage"
+  where
+    upower =
+      proc
+        "upower"
+        [ "-i"
+        , "/org/freedesktop/UPower/devices/battery_BAT0"
+        ]
+    upower' = upower { std_out = CreatePipe }
