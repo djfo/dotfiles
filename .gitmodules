@@ -40,3 +40,6 @@
 [submodule "vim/bundle/fzf.vim"]
 	path = vim/bundle/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
+[submodule "vim/bundle/vim-one"]
+	path = vim/bundle/vim-one
+	url = https://github.com/rakr/vim-one

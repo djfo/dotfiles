@@ -45,8 +45,9 @@ if has("gui_running")
     set guifont=xos4\ Terminus\ 12
   endif
 
-  colorscheme solarized
-  let g:solarized_hitrail=1
+  colorscheme one
+  "colorscheme solarized
+  "let g:solarized_hitrail=1
   set background=dark
 else
   set background=dark
