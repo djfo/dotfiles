@@ -188,3 +188,14 @@ map <F11> <Esc>:call ToggleGUICruft()<cr>
 " by default, hide gui menus
 set guioptions=i
 " }}}
+
+" Toggle background using F12 {{{
+function! ToggleBackground()
+  if &background=='dark'
+    exec('set background=light')
+  else
+    exec('set background=dark')
+  endif
+endfunction
+map <f12> <esc>:call ToggleBackground()<cr>
+" }}}
