@@ -173,7 +173,7 @@ command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 
 au BufNewFile,BufRead *.podspec,Podfile setf ruby
 
-" Toggle GUI cruft using F11 {{{
+" Toggle GUI cruft {{{
 " https://stackoverflow.com/a/13525844
 function! ToggleGUICruft()
   if &guioptions=='i'
@@ -182,8 +182,6 @@ function! ToggleGUICruft()
     exec('set guioptions=i')
   endif
 endfunction
-
-map <F11> <Esc>:call ToggleGUICruft()<cr>
 
 " by default, hide gui menus
 set guioptions=i
