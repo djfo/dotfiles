@@ -12,6 +12,7 @@
 	p = push
 	s = status
 	sb = status -sb
+        sm = submodule
 	t = log --graph --decorate
 	tr = log --graph --branches --decorate --remotes
 	tra = log --graph --decorate --all --remotes --branches
