@@ -10,6 +10,8 @@ case `uname` in
     alias lc="ls -FC --color=auto"
     alias ll="ls -Fl --color=auto"
 
+    alias cal="cal -m"
+
     alias xlock="xlock -mode rain"
 
     function my_open() {
