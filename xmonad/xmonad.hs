@@ -15,8 +15,7 @@ main :: IO ()
 main =
   do
     exeDir <- takeDirectory <$> getExecutablePath
-    envPath <- lookupEnv "PATH"
-    setEnv "PATH" $ maybe exeDir (\p -> exeDir ++ ":" ++ p) envPath
+    appendPath exeDir
 
     myLogHook <- initLogHook
 
@@ -56,3 +55,8 @@ myLayout = tiled ||| Mirror tiled ||| Full
 
 osDarwin :: Bool
 osDarwin = I.os == "darwin"
+
+appendPath :: FilePath -> IO ()
+appendPath newPath = do
+  envPath <- lookupEnv "PATH"
+  setEnv "PATH" $ maybe newPath (\p -> newPath ++ ":" ++ p) envPath
