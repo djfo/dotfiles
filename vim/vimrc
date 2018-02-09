@@ -80,11 +80,21 @@ function! ToggleList()
   endif
 endfunction
 
+function! ToggleCursorColumnLine()
+  if &cursorcolumn == 0
+    exec('set cursorcolumn')
+    exec('set cursorline')
+  else
+    exec('set nocursorcolumn')
+    exec('set nocursorline')
+  endif
+endfunction
+
 nnoremap <F2> :set relativenumber!<CR>:set number!<CR>
 nnoremap <F3> :call ToggleList()<CR>
 nnoremap <F4> :UndotreeToggle<CR>
 nnoremap <F5> :syntax sync fromstart<CR>
-nnoremap <F6> :set cuc!<CR>
+nnoremap <F6> :call ToggleCursorColumnLine()<CR>
 " rotate tab size
 nnoremap <silent> <F7> :let &ts=(&ts*2 > 8 ? 2 : &ts*2)<cr>:echo "tabstop:" . &ts<cr>
 
