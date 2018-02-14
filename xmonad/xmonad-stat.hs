@@ -3,9 +3,13 @@
 module Main where
 
 import           Control.Concurrent
+import           Data.List          (isPrefixOf)
 import           Data.List          (find, isInfixOf)
+import           System.Directory
+import           System.FilePath
 import           System.IO          (hGetContents)
 import           System.Process
+import           Text.Read
 import           XMonad.Util.Run
 
 main :: IO ()
@@ -48,20 +52,18 @@ getCPULoad = do
       return $ CPULoad total wait
     Nothing -> error "getCPULoad"
 
-getBatteryPercentage :: IO String
-getBatteryPercentage =
+sysPowerSupply :: FilePath
+sysPowerSupply = "/sys/class/power_supply"
+
+getBatteries :: IO [String]
+getBatteries = filter (isPrefixOf "BAT") <$> getDirectoryContents sysPowerSupply
+
+getBatteryPercentage :: String -> IO (Maybe Float)
+getBatteryPercentage bat =
   do
-    (_, Just hOut, _, _) <- createProcess upower'
-    out <- hGetContents hOut
-    let p = ("percentage" `isInfixOf`)
-    case find p (lines out) of
-      Just line -> return $ last (words line)
-      Nothing -> error "getBatteryPercentage"
+    now <- r <$> (readFile $ base </> "energy_now")
+    full <- r <$> (readFile $ base </> "energy_full")
+    return $ (/) <$> now <*> full
   where
-    upower =
-      proc
-        "upower"
-        [ "-i"
-        , "/org/freedesktop/UPower/devices/battery_BAT0"
-        ]
-    upower' = upower { std_out = CreatePipe }
+    base = sysPowerSupply </> bat
+    r = readMaybe :: String -> Maybe Float
