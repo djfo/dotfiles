@@ -12,7 +12,7 @@
 	p = push
 	s = status
 	sb = status -sb
-        sm = submodule
+	sm = submodule
 	t = log --graph --decorate
 	tr = log --graph --branches --decorate --remotes
 	tra = log --graph --decorate --all --remotes --branches
@@ -20,6 +20,7 @@
 	unstage = reset HEAD --
 	wc = whatchanged
 	wd = diff --word-diff=color
+	wdc = diff --word-diff=color --cached
 	who = shortlog -s
 	wip = commit -m WIP
 [push]
