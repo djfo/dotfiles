@@ -134,6 +134,7 @@ imap <c-a> <c-o>^
 " asy {{{
 augroup filetypedetect
 au BufNewFile,BufRead *.asy     setf asy
+au BufNewFile,BufRead *.expect  setf expect
 augroup END
 " }}}
 
