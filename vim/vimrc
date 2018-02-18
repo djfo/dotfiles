@@ -37,7 +37,12 @@ set foldmethod=marker
 set cm=blowfish2
 set dictionary+=/usr/share/dict/words
 
+set mouse=a
+set clipboard=autoselectplus
+
 if has("gui_running")
+  set guioptions=a
+
   if has("osx")
     set guifont=Monaco:h14
   else
@@ -46,8 +51,6 @@ if has("gui_running")
   endif
 
   colorscheme one
-  "colorscheme solarized
-  "let g:solarized_hitrail=1
   set background=dark
 else
   set background=dark
@@ -186,15 +189,13 @@ au BufNewFile,BufRead *.podspec,Podfile setf ruby
 " Toggle GUI cruft {{{
 " https://stackoverflow.com/a/13525844
 function! ToggleGUICruft()
-  if &guioptions=='i'
+  if stridx(&guioptions, 'i') < 0
+    exec('set guioptions+=imtTrL
     exec('set guioptions=imTrL')
   else
     exec('set guioptions=i')
   endif
 endfunction
-
-" by default, hide gui menus
-set guioptions=i
 " }}}
 
 " Toggle background using F12 {{{
