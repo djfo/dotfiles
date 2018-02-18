@@ -17,3 +17,5 @@ URxvt.utf8: 1
 dzen2.font: -xos4-terminus-*-*-*-*-16-*-*-*-*-*-*-*
 dzen2.foreground: #22ee11
 dzen2.background: black
+
+xpdf.initialZoom: page
