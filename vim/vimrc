@@ -37,11 +37,11 @@ set foldmethod=marker
 set cm=blowfish2
 set dictionary+=/usr/share/dict/words
 
-set mouse=a
 set clipboard=autoselectplus
 
 if has("gui_running")
   set guioptions=a
+  set mouse=a
 
   if has("osx")
     set guifont=Monaco:h14
@@ -50,10 +50,11 @@ if has("gui_running")
   endif
 
   colorscheme one
-  set background=dark
 else
-  set background=dark
+  set mouse=
 endif
+
+set background=dark
 
 " next/previous tab using C-n and C-p
 nmap  :tabn<CR>
