@@ -58,6 +58,7 @@ link xmonad .xmonad
 link x11/Xresources .Xresources
 if linux || freebsd; then
   link x11/Xmodmap .Xmodmap
+  link x11/xinitrc .xinitrc
   link z/z.sh .zsh/z.sh
   md local
   link color local/color

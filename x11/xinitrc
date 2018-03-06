@@ -1,0 +1,6 @@
+#!/bin/sh
+xrdb -merge $HOME/.Xresources
+xset +fp $HOME/local/share/fonts/X11/misc
+urxvt &
+OS=`uname | tr '[:upper:]' '[:lower:]'`
+exec $HOME/.xmonad/xmonad-x86_64-$OS
