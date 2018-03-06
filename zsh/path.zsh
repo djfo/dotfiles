@@ -8,7 +8,7 @@ PATH=$HOME/.cabal/bin:$PATH
 # stack
 PATH=$HOME/.local/bin:$PATH
 
-if linux; then
+if darwin; then
   TEXLIVE=/usr/local/texlive
   if [ -d $TEXLIVE ]; then
     TEXLIVE_VERSION=`basename $(ls -d $TEXLIVE/2* | tail -1)`
