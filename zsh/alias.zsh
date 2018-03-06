@@ -33,7 +33,7 @@ if darwin; then
   alias gvim="mvim"
 fi
 
-if linux || bsd; then
+if linux || freebsd; then
   alias xlock="xlock -mode rain"
 
   function my_open() {
