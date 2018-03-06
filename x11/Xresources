@@ -1,4 +1,4 @@
-xterm*font: *-fixed-*-*-*-20-*
+xterm*font: -xos4-terminus-medium-r-normal-*-16-*-*-*-*-*-*-*
 xterm*foreground: gray
 xterm*background: black
 xterm*cursorblink: true
@@ -6,8 +6,8 @@ xterm*visualbell: true
 xterm*utf8: 1
 xterm*cursorColor: green
 
-URxvt.font:xft:Monaco:size=10:antialias=false
-URxvt.boldFont:xft:Monaco:size=10:antialias=false
+URxvt.font:     -xos4-terminus-medium-r-normal-*-16-*-*-*-*-*-*-*
+URxvt.boldFont: -xos4-terminus-medium-r-normal-*-16-*-*-*-*-*-*-*
 URxvt.foreground:gray
 URxvt.background:black
 URxvt.cursorColor:green
