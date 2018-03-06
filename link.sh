@@ -1,4 +1,5 @@
 #!/bin/sh
+. zsh/os.zsh
 tmp=`pwd`
 cd
 escape() {
@@ -55,16 +56,13 @@ link vim-pathogen/autoload/pathogen.vim .vim/autoload/pathogen.vim
 link emacs/emacs .emacs
 link xmonad .xmonad
 link x11/Xresources .Xresources
-case `uname` in
-  Linux)
-    link x11/Xmodmap .Xmodmap
-    link z/z.sh .zsh/z.sh
-    md local
-    link color local/color
-    ;;
-  Darwin)
-    link x11-osx/Xdefaults .Xdefaults
-    link x11-osx/xinitrc .xinitrc
-    ;;
-esac
+if linux || freebsd; then
+  link x11/Xmodmap .Xmodmap
+  link z/z.sh .zsh/z.sh
+  md local
+  link color local/color
+elif darwin; then
+  link x11-osx/Xdefaults .Xdefaults
+  link x11-osx/xinitrc .xinitrc
+fi
 link mailcap .mailcap

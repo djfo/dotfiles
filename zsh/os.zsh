@@ -1,15 +1,15 @@
-function darwin() {
+darwin() {
   uname | grep Darwin > /dev/null
 }
 
-function freebsd() {
+freebsd() {
   uname | grep FreeBSD > /dev/null
 }
 
-function linux() {
+linux() {
   uname | grep Linux > /dev/null
 }
 
-function bsd() {
+bsd() {
   freebsd || darwin
 }
