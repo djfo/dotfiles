@@ -1,4 +1,4 @@
-export TERM=xterm-16color
+#export TERM=xterm-256color
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
@@ -13,25 +13,24 @@ zstyle ':completion:*' menu select=4
 DIRSTACKSIZE=8
 setopt autopushd pushdminus
 
+source ~/.zsh/os.zsh
 source ~/.zsh/alias.zsh
 source ~/.zsh/le.zsh
 source ~/.zsh/path.zsh
 source ~/.zsh/prompt.zsh
 source ~/.zsh/up.zsh
 
-case `uname` in
-  Linux)
-    source ~/.zsh/x11.zsh
-    . $HOME/.zsh/z.sh
-    unset SSH_ASKPASS
-    ;;
-  Darwin)
-    . `brew --prefix`/etc/profile.d/z.sh
-    ;;
-esac
+if linux || freebsd; then
+  source ~/.zsh/x11.zsh
+  . $HOME/.zsh/z.sh
+  unset SSH_ASKPASS
+elif darwin; then
+  . `brew --prefix`/etc/profile.d/z.sh
+fi
 
 for each in `find ~/.zsh/local -name \*.zsh`; do
   source $each
 done
 
 export EDITOR=vi
+export TERM=xterm

@@ -4,40 +4,43 @@ alias g="git"
 alias vi="vim"
 alias d="darcs"
 
-case `uname` in
-  Linux)
-    alias ls="ls -F1 --color=auto"
-    alias lc="ls -FC --color=auto"
-    alias ll="ls -Fl --color=auto"
+if linux; then
+  alias ls="ls -F1 --color=auto"
+  alias lc="ls -FC --color=auto"
+  alias ll="ls -Fl --color=auto"
 
-    alias cal="cal -m"
+  alias cal="cal -m"
+fi
 
-    alias xlock="xlock -mode rain"
+if bsd; then
+  alias ls="ls -GF1"
+  alias lc="ls -GFC"
+  alias ll="ls -GFlh"
+fi
 
-    function my_open() {
-      xdg-open $1 >/dev/null 2>/dev/null &
-      disown $!
-    }
-    alias o="my_open"
+if darwin; then
+  alias e="mvim"
+  alias o="open"
+  alias r="open -R"
 
-    alias mvim="gvim"
-    ;;
-  Darwin)
-    alias ls="ls -GF1"
-    alias lc="ls -GFC"
-    alias ll="ls -GFlh"
+  alias c="pbcopy"
+  alias p="pbpaste"
 
-    alias e="mvim"
-    alias o="open"
-    alias r="open -R"
+  function man_() {
+    man $* | col -b
+  }
 
-    alias c="pbcopy"
-    alias p="pbpaste"
+  alias gvim="mvim"
+fi
 
-    function man_() {
-      man $* | col -b
-    }
+if linux || bsd; then
+  alias xlock="xlock -mode rain"
 
-    alias gvim="mvim"
-    ;;
-esac
+  function my_open() {
+    xdg-open $1 >/dev/null 2>/dev/null &
+    disown $!
+  }
+  alias o="my_open"
+
+  alias mvim="gvim"
+fi
