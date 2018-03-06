@@ -8,6 +8,7 @@ xterm*cursorColor: green
 
 URxvt.font:     -xos4-terminus-medium-r-normal-*-16-*-*-*-*-*-*-*
 URxvt.boldFont: -xos4-terminus-medium-r-normal-*-16-*-*-*-*-*-*-*
+URxvt.scrollBar: false
 URxvt.foreground: gray
 URxvt.background: black
 URxvt.cursorColor: green
