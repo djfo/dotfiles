@@ -8,11 +8,13 @@ xterm*cursorColor: green
 
 URxvt.font:     -xos4-terminus-medium-r-normal-*-16-*-*-*-*-*-*-*
 URxvt.boldFont: -xos4-terminus-medium-r-normal-*-16-*-*-*-*-*-*-*
-URxvt.foreground:gray
-URxvt.background:black
-URxvt.cursorColor:green
-URxvt.cursorblink:true
+URxvt.foreground: gray
+URxvt.background: black
+URxvt.cursorColor: green
+URxvt.cursorblink: true
 URxvt.utf8: 1
+URxvt.keysym.Control-p: \033OA
+URxvt.keysym.Control-n: \033OB
 
 dzen2.font: -xos4-terminus-*-*-*-*-16-*-*-*-*-*-*-*
 dzen2.foreground: #22ee11
