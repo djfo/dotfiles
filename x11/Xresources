@@ -6,8 +6,10 @@ xterm*visualbell: true
 xterm*utf8: 1
 xterm*cursorColor: green
 
-URxvt.font:     -xos4-terminus-medium-r-normal-*-16-*-*-*-*-*-*-*
-URxvt.boldFont: -xos4-terminus-medium-r-normal-*-16-*-*-*-*-*-*-*
+urxvt.font:     -misc-fixed-medium-r-normal-*-18-120-100-100-c-90-iso8859-1
+urxvt.boldFont: -misc-fixed-medium-r-normal-*-18-120-100-100-c-90-iso8859-1
+!URxvt.font:     -xos4-terminus-medium-r-normal-*-16-*-*-*-*-*-*-*
+!URxvt.boldFont: -xos4-terminus-medium-r-normal-*-16-*-*-*-*-*-*-*
 URxvt.scrollBar: false
 URxvt.foreground: gray
 URxvt.background: black
