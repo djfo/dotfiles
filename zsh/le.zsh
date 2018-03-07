@@ -1,5 +1,6 @@
 autoload -z edit-command-line
 zle -N edit-command-line
+bindkey -e
 bindkey "^X^E" edit-command-line
 
 # http://grml.org/zsh-pony/#sec-10-5

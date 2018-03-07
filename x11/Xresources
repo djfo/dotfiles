@@ -16,8 +16,6 @@ URxvt.background: black
 URxvt.cursorColor: green
 URxvt.cursorblink: true
 URxvt.utf8: 1
-URxvt.keysym.Control-p: \033OA
-URxvt.keysym.Control-n: \033OB
 
 dzen2.font: -xos4-terminus-*-*-*-*-16-*-*-*-*-*-*-*
 dzen2.foreground: #22ee11
