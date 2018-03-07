@@ -27,3 +27,7 @@ Packages:
 
 - ghc-mod
 - stylish-haskell
+
+## Bitmap fonts
+
+- [UW ttyp0](https://people.mpi-inf.mpg.de/~uwe/misc/uw-ttyp0/)
