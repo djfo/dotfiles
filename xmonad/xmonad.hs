@@ -39,9 +39,7 @@ main =
       , ((modm, xK_z), sendMessage MirrorExpand)
       ]
 
-    myTerminal
-      | osDarwin  = "/usr/local/bin/urxvt"
-      | otherwise = "gnome-terminal"
+    myTerminal = "urxvt"
 
     initLogHook
       | osDarwin  = return $ logHook def
