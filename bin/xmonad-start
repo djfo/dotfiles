@@ -3,4 +3,5 @@ xrdb -merge $HOME/.Xresources
 xsetroot -solid darkcyan
 xcalib -d :0 $HOME/local/color/Monitor_20.07.2012_1_01.icc
 numlockx on
+xset +fp $HOME/local/share/fonts/X11
 exec $HOME/.xmonad/xmonad-x86_64-linux
