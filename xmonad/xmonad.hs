@@ -4,10 +4,11 @@ module Main where
 
 import           System.Environment
 import           System.FilePath
-import qualified System.Info              as I
+import qualified System.Info                 as I
 import           XMonad
 import           XMonad.Hooks.DynamicLog
 import           XMonad.Hooks.ManageDocks
+import           XMonad.Layout.ResizableTile
 import           XMonad.Util.CustomKeys
 import           XMonad.Util.Run
 
@@ -34,6 +35,8 @@ main =
     inskeys (XConfig {modMask = modm}) =
       [ ((modm .|. shiftMask, xK_space), spawn "cycle-kbd-layout")
       , ((modm .|. controlMask, xK_b), sendMessage ToggleStruts)
+      , ((modm, xK_a), sendMessage MirrorShrink)
+      , ((modm, xK_z), sendMessage MirrorExpand)
       ]
 
     myTerminal
@@ -45,10 +48,13 @@ main =
       | otherwise = do h <- spawnPipe "dzen2 -dock -xs 2"
                        return $ dynamicLogWithPP $ def { ppOutput = hPutStrLn h }
 
-myLayout :: Choose Tall (Choose (Mirror Tall) Full) a
-myLayout = tiled ||| Mirror tiled ||| Full
+myLayout :: Choose Tall (Choose (Mirror Tall) (Choose ResizableTall Full)) a
+myLayout = tiled ||| Mirror tiled ||| resizableTall ||| Full
   where
     tiled = Tall nmaster delta ratio
+
+    resizableTall = ResizableTall nmaster delta ratio []
+
     nmaster = 1
     ratio = 1/2
     delta = 3/100
