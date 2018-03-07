@@ -45,6 +45,7 @@ if has("gui_running")
 
   if has("osx")
     set guifont=Monaco:h14
+    set noantialias
   else
     set guifont=Fantasque\ Sans\ Mono\ 12
   endif
