@@ -47,7 +47,7 @@ if has("gui_running")
     set guifont=Monaco:h14
     set noantialias
   else
-    set guifont=Fantasque\ Sans\ Mono\ 12
+    set guifont=UW\ Ttyp0\ 14
   endif
 
   colorscheme one
