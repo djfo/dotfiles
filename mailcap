@@ -1,2 +1,4 @@
 text/html; lynx -assume_charset=%{charset} -display_charset=utf-8 -force_html -dump -stdin; copiousoutput;
 #text/html; w3m -I %{charset} -T text/html; copiousoutput;
+
+application/pdf; xpdf '%s'
