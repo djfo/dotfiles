@@ -62,6 +62,7 @@ if linux || freebsd; then
   link z/z.sh .zsh/z.sh
   md local
   link color local/color
+  link xpdfrc .xpdfrc
 elif darwin; then
   link x11-osx/Xdefaults .Xdefaults
   link x11-osx/xinitrc .xinitrc
