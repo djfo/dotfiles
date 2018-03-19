@@ -24,3 +24,6 @@ dzen2.foreground: #22ee11
 dzen2.background: black
 
 xpdf.initialZoom: page
+
+*color4: #a0a0ff
+*color12: #a0a0ff
