@@ -25,5 +25,13 @@ dzen2.background: black
 
 xpdf.initialZoom: page
 
+XLock.mode: rain
+XLock.rain.delay: 35000
+XLock.rain.count: 1
+XLock.rain.cycles: 1
+XLock.rain.size: 1
+XLock.rain.ncolors: 64
+XLock.rain.saturation: 0.3
+
 *color4: #4286f4
 *color12: #4286f4
