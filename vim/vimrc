@@ -112,6 +112,7 @@ vmap <Leader>a= :Tabularize /=<CR>
 map <Leader>do :diffoff<CR>
 map <Leader>dt :diffthis<CR>
 map <Leader>du :diffupdate<CR>
+map <Leader>gb :Gblame<CR>
 map <Leader>gd :Gdiff<CR>
 map <Leader>gs :Gstatus<CR>
 vmap <Leader>ha: :Tabularize /::<CR>
