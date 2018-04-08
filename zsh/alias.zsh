@@ -16,6 +16,7 @@ if bsd; then
   alias ls="ls -GF1"
   alias lc="ls -GFC"
   alias ll="ls -GFlh"
+  alias grep="grep --color=auto"
 fi
 
 if darwin; then
