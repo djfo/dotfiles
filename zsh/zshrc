@@ -32,5 +32,5 @@ for each in `find ~/.zsh/local -name \*.zsh`; do
   source $each
 done
 
-export EDITOR=vi
+export EDITOR=vim
 export TERM=xterm
