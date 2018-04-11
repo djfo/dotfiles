@@ -3,6 +3,7 @@ for cmd in rm cp mv; alias $cmd="$cmd -i"
 alias g="git"
 alias vi="vim"
 alias d="darcs"
+alias ts="moreutils-ts"
 
 if linux; then
   alias ls="ls -F1 --color=auto"
@@ -36,6 +37,7 @@ fi
 
 if linux || freebsd; then
   alias xlock="xlock -mode rain"
+  alias pdfopen="pdfopen --viewer xpdf"
 
   function my_open() {
     xdg-open $1 >/dev/null 2>/dev/null &
