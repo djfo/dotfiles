@@ -1,0 +1,11 @@
+#!/bin/sh
+FONT=xft:Fantasque\ Sans\ Mono:pixelsize=24,9x15bold
+urxvt \
+  -fg black \
+  -bg white \
+  -cr gray \
+  -fn "$FONT" \
+  -fb "$FONT" \
+  -fi "$FONT" \
+  -fbi "$FONT"
+  #-fn "xft:Bitstream Vera Sans Mono:pixelsize=18,9x15bold"
