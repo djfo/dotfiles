@@ -18,6 +18,7 @@
 	tra = log --graph --decorate --all --remotes --branches
 	tro = log --pretty=oneline --abbrev-commit --graph --decorate
 	unstage = reset HEAD --
+        waddp = -c interactive.diffFilter="git diff --word-diff" add -p
 	wc = whatchanged
 	wd = diff --word-diff=color
 	wdc = diff --word-diff=color --cached
