@@ -195,7 +195,7 @@ autocmd BufNewFile,BufReadPost *.tex set filetype=tex
 " https://stackoverflow.com/a/13525844
 function! ToggleGUICruft()
   if stridx(&guioptions, 'i') < 0
-    exec('set guioptions+=imtTrL
+    exec('set guioptions+=imtTrL')
     exec('set guioptions=imTrL')
   else
     exec('set guioptions=i')
