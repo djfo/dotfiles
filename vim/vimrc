@@ -203,7 +203,7 @@ function! ToggleGUICruft()
 endfunction
 " }}}
 
-" Toggle background using F12 {{{
+" Toggle background using F8 {{{
 function! ToggleBackground()
   if &background=='dark'
     exec('set background=light')
@@ -211,7 +211,7 @@ function! ToggleBackground()
     exec('set background=dark')
   endif
 endfunction
-map <f12> <esc>:call ToggleBackground()<cr>
+map <f8> <esc>:call ToggleBackground()<cr>
 " }}}
 
 augroup numbertoggle
