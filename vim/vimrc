@@ -219,3 +219,6 @@ augroup numbertoggle
   autocmd BufEnter,FocusGained,WinEnter * if &nu | set rnu   | endif
   autocmd BufLeave,FocusLost,WinLeave   * if &nu | set nornu | endif
 augroup END
+
+" use `:WipeReg<CR>` to clear all registers
+command! WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor
