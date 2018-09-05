@@ -34,3 +34,9 @@ done
 
 export EDITOR=vim
 export TERM=xterm
+
+if [ -e $HOME/banner ] && [ -s $HOME/banner ]; then
+  echo +++
+  cat $HOME/banner
+  echo +++
+fi
