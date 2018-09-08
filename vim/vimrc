@@ -39,6 +39,8 @@ set dictionary+=/usr/share/dict/words
 
 set clipboard=autoselectplus
 
+set background=dark
+
 if has("gui_running")
   set guioptions=a
   set mouse=a
@@ -46,6 +48,7 @@ if has("gui_running")
   if has("osx")
     set guifont=Monaco:h14
     set noantialias
+    set background=light
   else
     set guifont=UW\ Ttyp0\ 14
   endif
@@ -54,8 +57,6 @@ if has("gui_running")
 else
   set mouse=
 endif
-
-set background=dark
 
 " next/previous tab using C-n and C-p
 nmap  :tabn<CR>
