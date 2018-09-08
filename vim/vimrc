@@ -42,7 +42,7 @@ set clipboard=autoselectplus
 set background=dark
 
 if has("gui_running")
-  set guioptions=a
+  set guioptions=ailLr
   set mouse=a
 
   if has("osx")
@@ -194,12 +194,11 @@ autocmd BufNewFile,BufReadPost *.tex set filetype=tex
 
 " Toggle GUI cruft {{{
 " https://stackoverflow.com/a/13525844
-function! ToggleGUICruft()
-  if stridx(&guioptions, 'i') < 0
-    exec('set guioptions+=imtTrL')
-    exec('set guioptions=imTrL')
+function ToggleGUICruft()
+  if stridx(&guioptions, 'm') < 0
+    exec('set guioptions+=mT')
   else
-    exec('set guioptions=i')
+    exec('set guioptions-=mT')
   endif
 endfunction
 " }}}
