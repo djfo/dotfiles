@@ -5,6 +5,7 @@ alias vi="vim"
 alias d="darcs"
 alias ts="moreutils-ts"
 alias h="history"
+alias dh="dirs -v"
 
 if linux; then
   alias ls="ls -F1 --color=auto"
