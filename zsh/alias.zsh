@@ -13,6 +13,8 @@ if linux; then
   alias lc="ls -FC --color=auto"
   alias ll="ls -Fl --color=auto"
 
+  alias du="du --si"
+
   alias cal="cal -m"
 fi
 
@@ -21,6 +23,7 @@ if bsd; then
   alias lc="ls -GFC"
   alias ll="ls -GFlh"
   alias grep="grep --color=auto"
+  alias du="du -h"
 fi
 
 if darwin; then
