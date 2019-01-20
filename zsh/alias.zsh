@@ -7,6 +7,8 @@ alias ts="moreutils-ts"
 alias h="history"
 alias dh="dirs -v"
 alias pd="popd"
+alias ..="cd .."
+alias ...="cd ../.."
 
 if linux; then
   alias ls="ls -F1 --color=auto"
