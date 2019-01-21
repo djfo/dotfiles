@@ -1,2 +1,2 @@
-setlocal makeprg=asy\ -outformat\ pdf\ %
+setlocal makeprg=asy\ -nosafe\ -outformat\ pdf\ %
 setlocal errorformat=%f:\ %l.%c:\ %m
