@@ -1,6 +1,10 @@
 #!/bin/sh
 FONTSIZE=18
 case $1 in
+  --help)
+    echo "Usage: $0 [--large|--huge]"
+    exit 1
+    ;;
   --huge)
     FONTSIZE=50
     ;;
