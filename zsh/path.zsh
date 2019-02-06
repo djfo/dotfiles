@@ -1,3 +1,5 @@
+source ~/.zsh/os.zsh
+
 PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
 
 PATH=$HOME/bin:$PATH
