@@ -2,41 +2,20 @@
 	path = z
 	url = https://github.com/rupa/z
 [submodule "vim/bundle/vim-fugitive"]
-	path = vim/bundle/vim-fugitive
+	path = vim/pack/dist/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim/bundle/tabular"]
-	path = vim/bundle/tabular
+	path = vim/pack/dist/start/tabular
 	url = git://github.com/godlygeek/tabular.git
-[submodule "vim/bundle/swift.vim"]
-	path = vim/bundle/swift.vim
-	url = https://github.com/keith/swift.vim
 [submodule "vim/bundle/vim2hs"]
-	path = vim/bundle/vim2hs
+	path = vim/pack/dist/start/vim2hs
 	url = https://github.com/dag/vim2hs
 [submodule "vim/bundle/vimwiki"]
-	path = vim/bundle/vimwiki
+	path = vim/pack/dist/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki
-[submodule "vim/bundle/vim-plist"]
-	path = vim/bundle/vim-plist
-	url = https://github.com/darfink/vim-plist
-[submodule "vim/bundle/ghcmod-vim"]
-	path = vim/bundle/ghcmod-vim
-	url = https://github.com/eagletmt/ghcmod-vim
-[submodule "vim/bundle/vimproc.vim"]
-	path = vim/bundle/vimproc.vim
-	url = https://github.com/Shougo/vimproc.vim
 [submodule "vim/bundle/undotree"]
-	path = vim/bundle/undotree
+	path = vim/pack/dist/start/undotree
 	url = https://github.com/mbbill/undotree.git
-[submodule "vim/bundle/idris-vim"]
-	path = vim/bundle/idris-vim
-	url = https://github.com/idris-hackers/idris-vim
-[submodule "vim/bundle/vim-colors-solarized"]
-	path = vim/bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized
-[submodule "vim/bundle/fzf.vim"]
-	path = vim/bundle/fzf.vim
-	url = https://github.com/junegunn/fzf.vim
 [submodule "vim/bundle/vim-one"]
-	path = vim/bundle/vim-one
+	path = vim/pack/dist/start/vim-one
 	url = https://github.com/rakr/vim-one
