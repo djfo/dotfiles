@@ -25,6 +25,7 @@ main =
     , keys = customKeys delkeys inskeys
     , logHook = myLogHook
     , layoutHook = avoidStruts myLayout
+    , manageHook = title =? "xclock" --> doFloat
     }
   where
     delkeys :: XConfig l -> [(KeyMask, KeySym)]
