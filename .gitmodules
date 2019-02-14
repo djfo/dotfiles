@@ -1,21 +1,21 @@
 [submodule "z"]
 	path = z
 	url = https://github.com/rupa/z
-[submodule "vim/bundle/vim-fugitive"]
+[submodule "vim/pack/dist/start/vim-fugitive"]
 	path = vim/pack/dist/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "vim/bundle/tabular"]
+[submodule "vim/pack/dist/start/tabular"]
 	path = vim/pack/dist/start/tabular
-	url = git://github.com/godlygeek/tabular.git
-[submodule "vim/bundle/vim2hs"]
+	url = https://github.com/godlygeek/tabular.git
+[submodule "vim/pack/dist/start/vim2hs"]
 	path = vim/pack/dist/start/vim2hs
 	url = https://github.com/dag/vim2hs
-[submodule "vim/bundle/vimwiki"]
+[submodule "vim/pack/dist/start/vimwiki"]
 	path = vim/pack/dist/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki
-[submodule "vim/bundle/undotree"]
+[submodule "vim/pack/dist/start/undotree"]
 	path = vim/pack/dist/start/undotree
 	url = https://github.com/mbbill/undotree.git
-[submodule "vim/bundle/vim-one"]
+[submodule "vim/pack/dist/start/vim-one"]
 	path = vim/pack/dist/start/vim-one
 	url = https://github.com/rakr/vim-one
