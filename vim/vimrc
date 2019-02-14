@@ -48,7 +48,7 @@ if has("gui_running")
     set noantialias
     set background=light
   else
-    set guifont=UW\ Ttyp0\ 14
+    set guifont=Ttyp0\ 14
   endif
 
   colorscheme one
