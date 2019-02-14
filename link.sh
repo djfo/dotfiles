@@ -53,7 +53,6 @@ if [ ! -e $HOME/.gitconfig.local ]; then
 fi
 link vim/vimrc .vimrc
 link vim .vim
-link vim-pathogen/autoload/pathogen.vim .vim/autoload/pathogen.vim
 link emacs/emacs .emacs
 link xmonad .xmonad
 link x11/Xresources .Xresources
