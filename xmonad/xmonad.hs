@@ -47,12 +47,10 @@ main =
       | otherwise = do h <- spawnPipe "dzen2 -dock -xs 2"
                        return $ dynamicLogWithPP $ def { ppOutput = hPutStrLn h }
 
-myLayout :: Choose Tall (Choose (Mirror Tall) (Choose ResizableTall Full)) a
-myLayout = tiled ||| Mirror tiled ||| resizableTall ||| Full
+myLayout :: Choose Tall Full a
+myLayout = tiled ||| Full
   where
     tiled = Tall nmaster delta ratio
-
-    resizableTall = ResizableTall nmaster delta ratio []
 
     nmaster = 1
     ratio = 1/2
