@@ -32,7 +32,7 @@ set wildmenu
 
 set foldmethod=marker
 
-set cm=blowfish2
+set cryptmethod=blowfish2
 set dictionary+=/usr/share/dict/words
 
 set clipboard=autoselectplus
