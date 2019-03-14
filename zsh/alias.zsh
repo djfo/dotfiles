@@ -46,6 +46,7 @@ fi
 if linux || freebsd; then
   alias xlock="xlock -mode rain"
   alias pdfopen="pdfopen --viewer xpdf"
+  alias xclock="xclock -geometry 100x100-40+40"
 
   function my_open() {
     xdg-open $1 >/dev/null 2>/dev/null &
