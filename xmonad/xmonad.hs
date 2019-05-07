@@ -41,6 +41,7 @@ main =
       , ((0, 0x1008ff11), spawn "amixer -q sset Master 2%-")
       -- , ((0, 0x1008ff12), spawn "amixer set Master toggle")
       , ((0, 0x1008ff13), spawn "amixer -q sset Master 2%+")
+      , ((modm, xK_p), spawn "rofi -show run")
       ]
 
     myTerminal = "urxvt"
