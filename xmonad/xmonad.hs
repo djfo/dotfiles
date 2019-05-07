@@ -38,6 +38,9 @@ main =
       , ((modm .|. controlMask, xK_b), sendMessage ToggleStruts)
       , ((modm, xK_a), sendMessage MirrorShrink)
       , ((modm, xK_z), sendMessage MirrorExpand)
+      , ((0, 0x1008ff11), spawn "amixer -q sset Master 2%-")
+      -- , ((0, 0x1008ff12), spawn "amixer set Master toggle")
+      , ((0, 0x1008ff13), spawn "amixer -q sset Master 2%+")
       ]
 
     myTerminal = "urxvt"
