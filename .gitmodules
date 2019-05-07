@@ -19,3 +19,6 @@
 [submodule "vim/pack/dist/start/vim-one"]
 	path = vim/pack/dist/start/vim-one
 	url = https://github.com/rakr/vim-one
+[submodule "vim/pack/dist/start/fzf.vim"]
+	path = vim/pack/dist/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
