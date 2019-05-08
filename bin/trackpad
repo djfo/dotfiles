@@ -1,0 +1,13 @@
+#!/bin/sh
+case $1 in
+  enable)
+    sysctl hw.psm.synaptics.min_pressure=32
+    ;;
+  disable)
+    sysctl hw.psm.synaptics.min_pressure=220
+    ;;
+  *)
+    echo "$0 [enable|disable]"
+    exit 1
+    ;;
+esac
