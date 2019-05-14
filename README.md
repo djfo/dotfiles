@@ -9,7 +9,7 @@ install links to your home directory.
     $ git submodule update
     $ ./link.sh
 
-Some utilities require additional dependencies to be installed:
+Some utilities in the `bin` directory require additional dependencies to be installed:
 
     $ bundle install
 
@@ -31,3 +31,11 @@ Packages:
 ## Bitmap fonts
 
 - [UW ttyp0](https://people.mpi-inf.mpg.de/~uwe/misc/uw-ttyp0/)
+
+## Xmonad
+
+Prerequisites
+
+- amixer
+- gmrun
+- rofi
