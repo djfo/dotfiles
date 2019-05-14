@@ -22,3 +22,9 @@
 [submodule "vim/pack/dist/start/fzf.vim"]
 	path = vim/pack/dist/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
+[submodule "vim/pack/dist/start/goyo.vim"]
+	path = vim/pack/dist/start/goyo.vim
+	url = https://github.com/junegunn/goyo.vim
+[submodule "vim/pack/dist/start/limelight.vim"]
+	path = vim/pack/dist/start/limelight.vim
+	url = https://github.com/junegunn/limelight.vim
