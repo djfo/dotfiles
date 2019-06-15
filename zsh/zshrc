@@ -20,6 +20,7 @@ source ~/.zsh/path.zsh
 source ~/.zsh/prompt.zsh
 source ~/.zsh/up.zsh
 source ~/.zsh/darcs.zsh
+source ~/.zsh/cmd.zsh
 
 if linux || freebsd; then
   source ~/.zsh/x11.zsh
