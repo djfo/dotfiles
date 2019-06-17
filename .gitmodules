@@ -28,3 +28,6 @@
 [submodule "vim/pack/dist/start/limelight.vim"]
 	path = vim/pack/dist/start/limelight.vim
 	url = https://github.com/junegunn/limelight.vim
+[submodule "vim/pack/dist/start/carbonpaper.vim"]
+	path = vim/pack/dist/start/carbonpaper.vim
+	url = https://github.com/s417-lama/carbonpaper.vim
