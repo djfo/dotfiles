@@ -228,5 +228,8 @@ dig \|- 8866
 
 autocmd BufNewFile,BufRead /tmp/mutt* set filetype=mail tw=60
 
+autocmd CmdlineEnter * set digraph
+autocmd CmdlineLeave * set nodigraph
+
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
