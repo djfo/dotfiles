@@ -226,5 +226,7 @@ command! WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | 
 
 dig \|- 8866
 
+autocmd BufNewFile,BufRead /tmp/mutt* set filetype=mail tw=60
+
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
