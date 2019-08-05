@@ -7,10 +7,12 @@
 	cp = cherry-pick
 	d = diff
 	dc = diff --cached
-        ds = diff --stat
+	ds = diff --stat
 	f = fetch
 	ls = log --pretty=oneline --abbrev-commit
+	m = merge
 	p = push
+	r = rebase
 	s = status
 	sb = status -sb
 	sm = submodule
@@ -19,7 +21,7 @@
 	tra = log --graph --decorate --all --remotes --branches
 	tro = log --pretty=oneline --abbrev-commit --graph --decorate
 	unstage = reset HEAD --
-        waddp = -c interactive.diffFilter="git diff --word-diff" add -p
+	waddp = -c interactive.diffFilter="git diff --word-diff" add -p
 	wc = whatchanged
 	wd = diff --word-diff=color
 	wdc = diff --word-diff=color --cached
