@@ -38,3 +38,10 @@ Prerequisites
 - amixer
 - gmrun
 - rofi
+
+## Raspberry Pi (Raspbian)
+
+Setup `zsh`
+
+    $ sudo apt install zsh
+    $ chsh -s /usr/bin/zsh
