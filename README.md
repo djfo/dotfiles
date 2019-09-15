@@ -2,8 +2,7 @@
 
 This repository contains a bunch of configuration files I use on my machines.
 
-After cloning this repository you may want to initialize the submodules and
-install links to your home directory.
+After cloning this repository you may want to initialize the submodules and install links to your home directory.
 
     $ git submodule init
     $ git submodule update
