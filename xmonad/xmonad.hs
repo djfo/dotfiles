@@ -5,10 +5,12 @@ module Main where
 import           System.Environment
 import           System.FilePath
 import qualified System.Info                 as I
+
 import           XMonad
 import           XMonad.Hooks.DynamicLog
 import           XMonad.Hooks.ManageDocks
 import           XMonad.Layout.ResizableTile
+import           XMonad.Layout.Spacing
 import           XMonad.Util.CustomKeys
 import           XMonad.Util.Run
 
@@ -24,10 +26,15 @@ main =
       terminal = myTerminal
     , keys = customKeys delkeys inskeys
     , logHook = myLogHook
-    , layoutHook = avoidStruts myLayout
+    , layoutHook = bordered $ avoidStruts myLayout
     , manageHook = title =? "xclock" --> doFloat
     }
   where
+    bordered layout =
+      let border = Border 2 2 2 2
+      in
+      spacingRaw True border True border True layout
+
     delkeys :: XConfig l -> [(KeyMask, KeySym)]
     delkeys XConfig {modMask = modm} =
       [ (modm .|. shiftMask, xK_space) ]
