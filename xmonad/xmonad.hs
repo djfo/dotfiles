@@ -56,8 +56,12 @@ main =
 
     initLogHook
       | osDarwin  = return $ logHook def
-      | otherwise = do h <- spawnPipe "dzen2 -dock -xs 2"
-                       return $ dynamicLogWithPP $ def { ppOutput = hPutStrLn h }
+      | otherwise = dzen2Logger
+
+dzen2Logger :: IO (X ())
+dzen2Logger = do
+  h <- spawnPipe "dzen2 -dock -xs 2"
+  return $ dynamicLogWithPP $ def { ppOutput = hPutStrLn h }
 
 myLayout :: Choose Tall (Choose (Mirror Tall) Full) a
 myLayout = tiled ||| Mirror tiled ||| Full
