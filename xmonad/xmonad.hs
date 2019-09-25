@@ -28,7 +28,7 @@ main =
     , logHook = myLogHook
     , layoutHook = bordered $ avoidStruts myLayout
     , manageHook = title =? "xclock" --> doFloat
-    , normalBorderColor = "gray"
+    , normalBorderColor = "darkgray"
     , focusedBorderColor = "white"
     }
   where
