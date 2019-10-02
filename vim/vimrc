@@ -247,3 +247,10 @@ augroup Binary
   au BufWritePost *.bin if &bin | %!xxd
   au BufWritePost *.bin set nomod | endif
 augroup END
+
+" blackboard bold
+digraph CC 8450
+digraph KK 120130
+digraph NN 8469
+digraph QQ 8474
+digraph RR 8477
