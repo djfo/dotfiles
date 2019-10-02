@@ -37,8 +37,8 @@ set dictionary+=/usr/share/dict/words
 
 set clipboard=autoselectplus
 
-"set undofile
-"set undodir=~/.vim/undodir
+set undofile
+set undodir=~/.vim-undodir
 
 set background=dark
 
