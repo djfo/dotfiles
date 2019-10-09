@@ -2,6 +2,8 @@ text/html; lynx -assume_charset=%{charset} -display_charset=utf-8 -force_html -d
 #text/html; w3m -I %{charset} -T text/html; copiousoutput;
 
 application/pdf; xpdf -q %s
+
+image/jpg; feh %s
 image/jpeg; feh %s
 image/png; feh %s
 image/gif; feh %s
