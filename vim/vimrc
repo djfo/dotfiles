@@ -131,6 +131,7 @@ map <Leader>M :make<CR>
 map <Leader>n :cn<CR>
 map <Leader>p :cp<CR>
 map <Leader>sw /\s\+$<CR>
+map <Leader>x :Lexplore<CR>
 
 " Emacs-like beginning and end of file
 imap <c-e> <c-o>$
