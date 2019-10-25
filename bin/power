@@ -1,7 +1,10 @@
 #!/bin/sh
-case `uname` in
+case `uname -s` in
   Linux)
     upower -i /org/freedesktop/UPower/devices/battery_BAT0
+    ;;
+  FreeBSD)
+    acpiconf -i 0
     ;;
   *)
     echo "don't know"
