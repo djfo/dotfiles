@@ -16,8 +16,6 @@ if linux; then
   alias ll="ls -Fl --color=auto"
 
   alias du="du --si"
-
-  alias cal="cal -m"
 fi
 
 if bsd; then
