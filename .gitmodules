@@ -28,3 +28,6 @@
 [submodule "vim/pack/dist/start/carbonpaper.vim"]
 	path = vim/pack/dist/start/carbonpaper.vim
 	url = https://github.com/s417-lama/carbonpaper.vim
+[submodule "vim/pack/dist/start/ctrlp.vim"]
+	path = vim/pack/dist/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
