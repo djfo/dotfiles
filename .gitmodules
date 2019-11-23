@@ -19,15 +19,6 @@
 [submodule "vim/pack/dist/start/vim-one"]
 	path = vim/pack/dist/start/vim-one
 	url = https://github.com/rakr/vim-one
-[submodule "vim/pack/dist/start/goyo.vim"]
-	path = vim/pack/dist/start/goyo.vim
-	url = https://github.com/junegunn/goyo.vim
-[submodule "vim/pack/dist/start/limelight.vim"]
-	path = vim/pack/dist/start/limelight.vim
-	url = https://github.com/junegunn/limelight.vim
-[submodule "vim/pack/dist/start/carbonpaper.vim"]
-	path = vim/pack/dist/start/carbonpaper.vim
-	url = https://github.com/s417-lama/carbonpaper.vim
 [submodule "vim/pack/dist/start/ctrlp.vim"]
 	path = vim/pack/dist/start/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
