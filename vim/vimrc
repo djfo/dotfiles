@@ -59,6 +59,8 @@ else
   set mouse=
 endif
 
+packadd! matchit
+
 " next/previous tab using C-n and C-p
 nmap  :tabn<CR>
 nmap  :tabp<CR>
