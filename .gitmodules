@@ -31,3 +31,6 @@
 [submodule "vim/pack/dist/start/ctrlp.vim"]
 	path = vim/pack/dist/start/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "vim/pack/dist/start/vim-sleuth"]
+	path = vim/pack/dist/start/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth
