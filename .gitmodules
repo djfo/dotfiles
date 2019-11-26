@@ -25,3 +25,6 @@
 [submodule "vim/pack/dist/start/vim-sleuth"]
 	path = vim/pack/dist/start/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth
+[submodule "vim/pack/dist/start/swift.vim"]
+	path = vim/pack/dist/start/swift.vim
+	url = https://github.com/keith/swift.vim
