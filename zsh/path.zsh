@@ -20,6 +20,10 @@ if darwin; then
   PATH=$HOME/Library/Haskell/bin:$PATH
 
   PATH=/usr/X11/bin:$PATH
+
+  if [ -d /usr/local/opt/ruby/bin ]; then
+    PATH=/usr/local/opt/ruby/bin:$PATH
+  fi
 fi
 
 export GOPATH=$HOME/go
