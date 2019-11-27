@@ -31,3 +31,6 @@
 [submodule "vim/pack/dist/start/vim-commentary"]
 	path = vim/pack/dist/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule "vim/pack/dist/start/vim-vinegar"]
+	path = vim/pack/dist/start/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar
