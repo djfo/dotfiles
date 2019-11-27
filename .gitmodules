@@ -28,3 +28,6 @@
 [submodule "vim/pack/dist/start/swift.vim"]
 	path = vim/pack/dist/start/swift.vim
 	url = https://github.com/keith/swift.vim
+[submodule "vim/pack/dist/start/vim-commentary"]
+	path = vim/pack/dist/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary
