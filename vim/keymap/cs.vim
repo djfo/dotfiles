@@ -64,3 +64,8 @@ z*	ζ
 8S	⁸
 9S	⁹
 \cdot	·	" U+00B7
+CC	ℂ
+KK	𝕂
+NN	ℕ
+QQ	ℚ
+RR	ℝ
