@@ -64,6 +64,7 @@ z*	ζ
 8S	⁸
 9S	⁹
 \cdot	·	" U+00B7
+xx	⨯
 CC	ℂ
 KK	𝕂
 NN	ℕ
