@@ -1,7 +1,9 @@
+export TERM=xterm
 #export TERM=xterm-256color
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
+export EDITOR=vim
 
 autoload colors
 colors
@@ -33,9 +35,6 @@ fi
 for each in `find ~/.zsh/local -name \*.zsh`; do
   source $each
 done
-
-export EDITOR=vim
-export TERM=xterm
 
 if [ -e $HOME/banner ] && [ -s $HOME/banner ]; then
   echo +++
