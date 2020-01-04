@@ -34,3 +34,6 @@
 [submodule "vim/pack/dist/start/vim-vinegar"]
 	path = vim/pack/dist/start/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar
+[submodule "vim/pack/dist/start/vim-powerline"]
+	path = vim/pack/dist/start/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline
