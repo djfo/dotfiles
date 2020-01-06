@@ -2,6 +2,8 @@ scriptencoding utf-8
 
 let b:keymap_name = "cs"
 
+" COMBINING RIGHT ARROW ABOVE (U+20D7)
+
 loadkeymap
 a*	α
 b*	β
@@ -75,3 +77,7 @@ KK	𝕂
 NN	ℕ
 QQ	ℚ
 RR	ℝ
+::	∷
+a>	a⃗
+b>	b⃗
+x>	x⃗
