@@ -52,7 +52,7 @@ main =
       , ((modm, xK_p), spawn "rofi -show run")
       ]
 
-    myTerminal = "urxvt"
+    myTerminal = "term"
 
     initLogHook
       | osDarwin  = return $ logHook def
