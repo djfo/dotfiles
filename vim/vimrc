@@ -271,3 +271,5 @@ let g:ctrlp_map = ''
 nnoremap <leader>e :CtrlP<cr>
 
 let g:markdown_fold_override_foldtext=0
+
+let g:netrw_browsex_viewer="xdg-open"
