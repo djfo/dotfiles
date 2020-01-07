@@ -63,7 +63,8 @@ if has("gui_running")
   elseif has("win32")
     set guifont=Hack:h12
   else
-    set guifont=Ttyp0\ 14
+    "set guifont=Ttyp0\ 14
+    set guifont=Ttyp0\ 17
   endif
 
   colorscheme one
