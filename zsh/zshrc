@@ -7,8 +7,9 @@ autoload colors
 colors
 
 autoload -Uz compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
 compinit
-zstyle ':completion:*' menu select=4
 
 DIRSTACKSIZE=8
 
