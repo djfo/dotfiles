@@ -1,0 +1,7 @@
+#!/bin/sh
+#urxvt -fn '-*-courier-medium-r-normal--18-*-*-*-*-*-*-*'
+FN="xft:Ttyp0:pixelsize=21" # 17
+FB="xft:Ttyp0:pixelsize=21:bold"
+urxvt \
+  -fn $FN \
+  -fb $FB
