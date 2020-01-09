@@ -18,13 +18,6 @@ Install native extension for `vimproc` plugin
 
     :VimProcInstall
 
-Install `fzy` for quickly opening files using the macros
-
-    ,e
-    ,s
-    ,v
-    ,t
-
 Install packages for Haskell development
 
     $ stack install <package>
@@ -46,7 +39,9 @@ Prerequisites
 - gmrun
 - rofi
 
-## Raspberry Pi (Raspbian)
+## Setup Instructions
+
+### Raspberry Pi (Raspbian)
 
 Setup `zsh`
 
