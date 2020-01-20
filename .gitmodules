@@ -1,6 +1,6 @@
 [submodule "z"]
 	path = z
-	url = https://github.com/rupa/z
+	url = https://github.com/rupa/z.git
 [submodule "vim/pack/dist/start/vim-fugitive"]
 	path = vim/pack/dist/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
@@ -9,31 +9,31 @@
 	url = https://github.com/godlygeek/tabular.git
 [submodule "vim/pack/dist/start/vim2hs"]
 	path = vim/pack/dist/start/vim2hs
-	url = https://github.com/dag/vim2hs
+	url = https://github.com/dag/vim2hs.git
 [submodule "vim/pack/dist/start/vimwiki"]
 	path = vim/pack/dist/start/vimwiki
-	url = https://github.com/vimwiki/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git
 [submodule "vim/pack/dist/start/undotree"]
 	path = vim/pack/dist/start/undotree
 	url = https://github.com/mbbill/undotree.git
 [submodule "vim/pack/dist/start/vim-one"]
 	path = vim/pack/dist/start/vim-one
-	url = https://github.com/rakr/vim-one
+	url = https://github.com/rakr/vim-one.git
 [submodule "vim/pack/dist/start/ctrlp.vim"]
 	path = vim/pack/dist/start/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "vim/pack/dist/start/vim-sleuth"]
 	path = vim/pack/dist/start/vim-sleuth
-	url = https://github.com/tpope/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth.git
 [submodule "vim/pack/dist/start/swift.vim"]
 	path = vim/pack/dist/start/swift.vim
-	url = https://github.com/keith/swift.vim
+	url = https://github.com/keith/swift.vim.git
 [submodule "vim/pack/dist/start/vim-commentary"]
 	path = vim/pack/dist/start/vim-commentary
-	url = https://github.com/tpope/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
 [submodule "vim/pack/dist/start/vim-vinegar"]
 	path = vim/pack/dist/start/vim-vinegar
-	url = https://github.com/tpope/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar.git
 [submodule "vim/pack/dist/start/vim-airline"]
 	path = vim/pack/dist/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
