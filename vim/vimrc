@@ -234,9 +234,6 @@ if v:version >= 800 && has('patch1206')
   autocmd CmdlineLeave * set nodigraph
 endif
 
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
-
 " vim -b : edit binary using xxd-format!
 augroup Binary
   au!
