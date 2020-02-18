@@ -9,13 +9,17 @@ set shiftwidth=2
 set shiftround
 
 set autoindent
+set backspace=indent,eol,start
+set smarttab
+
 set number
 set relativenumber
 "set hidden
 "set splitright
 "set gdefault
 
-set backspace=indent,eol,start
+set autoread
+
 set wrap
 set linebreak
 set showbreak=…
@@ -28,6 +32,7 @@ set nobackup
 set writebackup
 
 set path+=**
+set ruler
 set wildmenu
 
 set foldmethod=marker
