@@ -193,6 +193,7 @@ command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 
 au BufNewFile,BufRead *.podspec,Podfile setf ruby
 autocmd BufNewFile,BufReadPost *.tex set filetype=tex
+autocmd BufNewFile,BufRead *.plt setf gnuplot
 
 " Toggle GUI cruft {{{
 " https://stackoverflow.com/a/13525844
