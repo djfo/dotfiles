@@ -40,3 +40,8 @@ if [ -e $HOME/banner ] && [ -s $HOME/banner ]; then
   cat $HOME/banner
   echo +++
 fi
+
+# Fix `z` in WSL
+if wsl; then
+  setopt nobgnice
+fi
