@@ -13,3 +13,7 @@ linux() {
 bsd() {
   freebsd || darwin
 }
+
+wsl() {
+  [ -e /proc/version ] && grep -q Microsoft /proc/version
+}
