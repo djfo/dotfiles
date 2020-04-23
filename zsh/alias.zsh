@@ -1,6 +1,7 @@
 for cmd in rm cp mv; alias $cmd="$cmd -i"
 
 alias g="git"
+alias gim="git -c core.fileMode=false"
 alias vi="vim"
 alias d="darcs"
 alias ts="moreutils-ts"
