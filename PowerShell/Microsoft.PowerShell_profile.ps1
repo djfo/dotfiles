@@ -19,5 +19,26 @@ function Prompt {
   return " "
 }
 
+function Up($Arg) {
+  if ($Arg -eq $null) {
+    cd ..
+  }
+  elseif ($Arg.GetType().Name -eq "Int32") {
+    for ($i = 0; $i -lt $Arg; $i++) {
+      cd ..
+    }
+  }
+  elseif ($Arg.GetType().Name -eq "String") {
+    $oldpwd = $pwd
+    While (!(Test-Path $Arg)) {
+      cd ..
+      if ($pwd.Path -eq $oldpwd.Path) {
+        Write-Host "cannot go up"
+        return
+      }
+    }
+  }
+}
+
 Set-Alias -Name g -Value git
 Set-Alias -Name vi -Value vim
