@@ -1,12 +1,13 @@
 function Prompt {
-  $parent = Split-Path -Path $pwd -Parent
-  if ($parent -ne "") {
-    Write-Host $(Split-Path -Path $pwd -Parent) -NoNewline -ForegroundColor Cyan
-    Write-Host '\' -NoNewline
+  $path = $pwd.Path
+  if ($path.Length -gt 40) {
+    Write-Host $(Split-Path -Path $pwd -Qualifier) -NoNewline -ForegroundColor Cyan
+    Write-Host "\..\" -NoNewline
+    Write-Host $(Split-Path -Path $pwd -Leaf) -NoNewline -ForegroundColor Cyan
   }
-  Write-Host $(Split-Path -Path $pwd -Leaf) -NoNewline -ForegroundColor Cyan
-
-  Write-Host " " -NoNewLine
+  else {
+    Write-Host $path -NoNewline -ForegroundColor Cyan
+  }
 
   if ($?) {
     Write-Host '>' -NoNewline -ForegroundColor White
