@@ -37,3 +37,6 @@
 [submodule "vim/pack/dist/start/vim-airline"]
 	path = vim/pack/dist/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/pack/dist/start/vim-ps1"]
+	path = vim/pack/dist/start/vim-ps1
+	url = https://github.com/PProvost/vim-ps1
