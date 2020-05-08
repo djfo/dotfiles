@@ -37,3 +37,6 @@
 [submodule "vim/pack/dist/start/vim-airline"]
 	path = vim/pack/dist/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/pack/dist/start/vim-markdown-folding"]
+	path = vim/pack/dist/start/vim-markdown-folding
+	url = https://github.com/masukomi/vim-markdown-folding
