@@ -11,6 +11,7 @@ PATH=$HOME/.cabal/bin:$PATH
 PATH=$HOME/.local/bin:$PATH
 
 if darwin; then
+  # TeX Live
   TEXLIVE=/usr/local/texlive
   if [ -d $TEXLIVE ]; then
     TEXLIVE_VERSION=`basename $(ls -d $TEXLIVE/2* | tail -1)`
