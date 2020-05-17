@@ -5,6 +5,12 @@ case $1 in
     echo "Usage: $0 [--large|--huge]"
     exit 1
     ;;
+  --tiny)
+    FONTSIZE=12
+    ;;
+  --small)
+    FONTSIZE=14
+    ;;
   --huge)
     FONTSIZE=50
     ;;
