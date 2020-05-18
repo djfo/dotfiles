@@ -34,4 +34,4 @@ fi
 
 export GOPATH=$HOME/go
 
-which -s opam && eval $(opam env)
+which -s opam > /dev/null && eval $(opam env)
