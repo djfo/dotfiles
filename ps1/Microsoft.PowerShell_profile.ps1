@@ -21,17 +21,17 @@ function Prompt {
 
 function Up($Arg) {
   if ($Arg -eq $null) {
-    cd ..
+    Set-Location ..
   }
   elseif ($Arg.GetType().Name -eq "Int32") {
     for ($i = 0; $i -lt $Arg; $i++) {
-      cd ..
+      Set-Location ..
     }
   }
   elseif ($Arg.GetType().Name -eq "String") {
     $oldpwd = $pwd
     While (!(Test-Path $Arg)) {
-      cd ..
+      Set-Location ..
       if ($pwd.Path -eq $oldpwd.Path) {
         Write-Host "cannot go up"
         return
