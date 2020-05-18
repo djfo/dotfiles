@@ -2,6 +2,7 @@
 
 if ($host.Name -eq 'ConsoleHost') {
   $env:Path += ";${env:ProgramFiles(x86)}\Vim\vim81"
+  $env:Path += ";${env:ProgramFiles}\7-Zip"
 
   Import-Module PSReadLine
   Set-PSReadLineOption -EditMode Emacs
