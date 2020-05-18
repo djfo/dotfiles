@@ -42,6 +42,7 @@ md() {
 link zsh .zsh
 link zsh/zshrc .zshrc
 link zsh/zshenv .zshenv
+link zsh/profile.zsh .profile
 link screenrc .screenrc
 link tmux.conf .tmux.conf
 link ghci .ghci

@@ -22,7 +22,6 @@ source ~/.zsh/darcs.zsh
 source ~/.zsh/cmd.zsh
 source ~/.zsh/pass.zsh
 source ~/.zsh/env.zsh
-source ~/.zsh/ssh.zsh
 
 if linux || freebsd; then
   source ~/.zsh/x11.zsh
