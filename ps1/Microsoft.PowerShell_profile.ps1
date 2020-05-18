@@ -40,5 +40,15 @@ function Up($Arg) {
   }
 }
 
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
+Import-Module PSReadLine
+Set-PSReadLineOption -EditMode Emacs
+
+$env:Path += ";${env:ProgramFiles(x86)}\Vim\vim82"
+$env:Path += ";${env:ProgramFiles}\7-Zip"
+$env:Path += ";${env:ProgramFiles}\Git\bin"
+$env:Path += ";${env:USERPROFILE}\AppData\Local\Programs\Python\Python38"
+
 Set-Alias -Name g -Value git
 Set-Alias -Name vi -Value vim
