@@ -21,9 +21,11 @@ if darwin; then
   PATH=$HOME/Library/Haskell/bin:$PATH
 
   # Python (user install directory)
-  for each in `basename $(ls $HOME/Library/Python)`; do
-    PATH=$HOME/Library/Python/$each/bin:$PATH
-  done
+  if [ -d $HOME/Library/Python ]; then
+    for each in `basename $(ls $HOME/Library/Python)`; do
+      PATH=$HOME/Library/Python/$each/bin:$PATH
+    done
+  fi
 
   PATH=/usr/X11/bin:$PATH
 
