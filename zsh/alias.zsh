@@ -1,15 +1,15 @@
 for cmd in rm cp mv; alias $cmd="$cmd -i"
 
+alias ...="cd ../.."
+alias ..="cd .."
+alias d="darcs"
+alias dh="dirs -v"
 alias g="git"
 alias gim="git -c core.fileMode=false"
-alias vi="vim"
-alias d="darcs"
-alias ts="moreutils-ts"
 alias h="history"
-alias dh="dirs -v"
 alias pd="popd"
-alias ..="cd .."
-alias ...="cd ../.."
+alias ts="moreutils-ts"
+alias vi="vim"
 
 if linux; then
   alias ls="ls -F1 --color=auto"
