@@ -2,6 +2,7 @@ for cmd in rm cp mv; alias $cmd="$cmd -i"
 
 alias ...="cd ../.."
 alias ..="cd .."
+alias d-c="docker-compose"
 alias d="darcs"
 alias dh="dirs -v"
 alias g="git"
