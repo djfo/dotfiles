@@ -1,3 +1,8 @@
+if has("win32")
+  set encoding=utf-8
+  scriptencoding utf-8
+endif
+
 set nocompatible
 syntax on
 filetype plugin on
