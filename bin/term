@@ -2,6 +2,14 @@
 #urxvt -fn '-*-courier-medium-r-normal--18-*-*-*-*-*-*-*'
 FN="xft:Ttyp0:pixelsize=21" # 17
 FB="xft:Ttyp0:pixelsize=21:bold"
+FG=white
+BG=black
+if [ $1 = '--light' ]; then
+  FG=black
+  BG=white
+fi
 urxvt \
   -fn $FN \
-  -fb $FB
+  -fb $FB \
+  -fg $FG \
+  -bg $BG
