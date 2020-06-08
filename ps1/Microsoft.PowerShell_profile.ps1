@@ -1,6 +1,9 @@
 function Prompt {
   $path = $pwd.Path
-  if ($path.Length -gt (Get-Host).UI.RawUI.BufferSize.Width/2) {
+  if ($path -eq $env:USERPROFILE) {
+    Write-Host "~" -NoNewline
+  }
+  elseif ($path.Length -gt (Get-Host).UI.RawUI.BufferSize.Width/2) {
     Write-Host $(Split-Path -Path $pwd -Qualifier) -NoNewline -ForegroundColor Cyan
     Write-Host "\..\" -NoNewline
     Write-Host $(Split-Path -Path $pwd -Leaf) -NoNewline -ForegroundColor Cyan
