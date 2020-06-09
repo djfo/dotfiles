@@ -61,7 +61,7 @@ if has("gui_running")
     set noantialias
     set background=light
   elseif has("win32")
-    set guifont=Hack:h14
+    set guifont=Hack:h12
   else
     set guifont=Ttyp0\ 14
   endif
