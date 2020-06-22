@@ -2,6 +2,7 @@
 	editor = vim
 	whitespace = trailing-space,space-before-tab
 [alias]
+	authors = shortlog -e -s -n
 	b = branch
 	co = checkout
 	cp = cherry-pick
