@@ -43,3 +43,6 @@
 [submodule "vim/pack/dist/start/vim-ps1"]
 	path = vim/pack/dist/start/vim-ps1
 	url = https://github.com/PProvost/vim-ps1
+[submodule "vim/pack/dist/start/a.vim"]
+	path = vim/pack/dist/start/a.vim
+	url = https://github.com/vim-scripts/a.vim
