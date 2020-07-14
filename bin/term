@@ -1,15 +1,54 @@
 #!/bin/sh
+
 #urxvt -fn '-*-courier-medium-r-normal--18-*-*-*-*-*-*-*'
+
 FN="xft:Ttyp0:pixelsize=21" # 17
 FB="xft:Ttyp0:pixelsize=21:bold"
+
 FG=white
 BG=black
-if [ $1 = '--light' ]; then
+
+light() {
   FG=black
   BG=white
-fi
+}
+
+hack() {
+  FN="xft:Hack:style=Regular:pixelsize=$1"
+  FB="xft:Hack:style=Bold:pixelsize=$1"
+}
+
+large() {
+  hack 26
+}
+
+huge() {
+  hack 32
+}
+
+while [ $# -gt 0 ]; do
+  case $1 in
+    --light)
+      light
+      ;;
+    --large)
+      large
+      ;;
+    --huge)
+      huge
+      ;;
+    --beamer)
+      light
+      large
+      ;;
+  esac
+  shift
+done
+
 urxvt \
+  -pt Root \
   -fn $FN \
   -fb $FB \
   -fg $FG \
-  -bg $BG
+  -bg $BG \
+  $@
