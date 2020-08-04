@@ -119,6 +119,15 @@ let mapleader=","
 noremap <Leader>hey :echo "Hey, ho, let's go!"<cr>
 
 " sort -f -t \> -k 2
+map <Leader>1 1gt<CR>
+map <Leader>2 2gt<CR>
+map <Leader>3 3gt<CR>
+map <Leader>4 4gt<CR>
+map <Leader>5 5gt<CR>
+map <Leader>6 6gt<CR>
+map <Leader>7 7gt<CR>
+map <Leader>8 8gt<CR>
+map <Leader>9 9gt<CR>
 map <Leader>dg :diffget<CR>
 map <Leader>do :diffoff<CR>
 map <Leader>dp :diffput<CR>
