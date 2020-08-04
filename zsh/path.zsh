@@ -22,8 +22,8 @@ if darwin; then
 
   # Python (user install directory)
   if [ -d $HOME/Library/Python ]; then
-    for each in `basename $(ls $HOME/Library/Python)`; do
-      PATH=$HOME/Library/Python/$each/bin:$PATH
+    for each in `ls $HOME/Library/Python`; do
+      PATH=$HOME/Library/Python/`basename $each`/bin:$PATH
     done
   fi
 
