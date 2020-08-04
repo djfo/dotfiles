@@ -73,10 +73,6 @@ endif
 
 packadd! matchit
 
-" next/previous tab using C-n and C-p
-nmap  :tabn<CR>
-nmap  :tabp<CR>
-
 " search {{{
 set incsearch
 set hlsearch
@@ -142,6 +138,10 @@ map <Leader>ht :GhcModType<CR>
 map <Leader>sw /\s\+$<CR>
 vmap <Leader>t :Tabularize/
 map <Leader>x :Lexplore<CR>
+
+" next/previous tab using <C-n> and <C-p>
+map <C-n> :tabnext<CR>
+map <C-p> :tabprevious<CR>
 
 " Emacs-like beginning and end of file
 imap <c-e> <c-o>$
