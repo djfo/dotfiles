@@ -32,6 +32,12 @@ if darwin; then
   if [ -d /usr/local/opt/ruby/bin ]; then
     PATH=/usr/local/opt/ruby/bin:$PATH
   fi
+
+  USDPYTHON_BASEPATH=/Applications/usdpython
+  if [ -d $USDPYTHON_BASEPATH ]; then
+    PATH=$PATH:$USDPYTHON_BASEPATH/USD:$PATH:$USDPYTHON_BASEPATH/usdzconvert;
+    export PYTHONPATH=$PYTHONPATH:$USDPYTHON_BASEPATH/USD/lib/python
+  fi
 fi
 
 export GOPATH=$HOME/go
