@@ -139,9 +139,6 @@ map <Leader>hl :GhcModLint<CR>
 vmap <Leader>hs !stylish-haskell<CR>
 map <Leader>hS :GhcModSplitFunCase<CR>
 map <Leader>ht :GhcModType<CR>
-map <Leader>M :make<CR>
-map <Leader>n :cn<CR>
-map <Leader>p :cp<CR>
 map <Leader>sw /\s\+$<CR>
 vmap <Leader>t :Tabularize/
 map <Leader>x :Lexplore<CR>
