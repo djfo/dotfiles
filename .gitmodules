@@ -10,9 +10,6 @@
 [submodule "vim/pack/dist/start/vim2hs"]
 	path = vim/pack/dist/start/vim2hs
 	url = https://github.com/dag/vim2hs.git
-[submodule "vim/pack/dist/start/vimwiki"]
-	path = vim/pack/dist/start/vimwiki
-	url = https://github.com/vimwiki/vimwiki.git
 [submodule "vim/pack/dist/start/undotree"]
 	path = vim/pack/dist/start/undotree
 	url = https://github.com/mbbill/undotree.git
