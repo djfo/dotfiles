@@ -19,8 +19,8 @@
 	sm = submodule
 	t = log --graph --decorate
 	ta = log --graph --decorate --all
-	tr = log --graph --decorate --remotes
 	tb = log --graph --decorate --branches
+	tr = log --graph --decorate --remotes
 	tro = log --pretty=oneline --abbrev-commit --graph --decorate
 	unstage = reset HEAD --
 	waddp = -c interactive.diffFilter="git diff --word-diff" add -p
