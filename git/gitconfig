@@ -15,8 +15,11 @@
 	p = push
 	r = rebase
 	s = status
+	s- = switch -
 	sb = status -sb
+	sbu = status -sb -uno
 	sm = submodule
+	su = status -uno
 	t = log --graph --decorate
 	ta = log --graph --decorate --all
 	tb = log --graph --decorate --branches
