@@ -1,38 +1,38 @@
 [core]
-	editor = vim
+	editor     = vim
 	whitespace = trailing-space,space-before-tab
 [alias]
 	authors = shortlog -e -s -n
-	b = branch
-	co = checkout
-	cp = cherry-pick
-	d = diff
-	dc = diff --cached
-	ds = diff --stat
-	f = fetch
-	ls = log --pretty=oneline --abbrev-commit
-	m = merge
-	p = push
-	r = rebase
-	s = status
-	s- = switch -
-	sb = status -sb
-	sbu = status -sb -uno
-	sm = submodule
-	su = status -uno
-	t = log --graph --decorate
-	ta = log --graph --decorate --all
-	tb = log --graph --decorate --branches
-	tr = log --graph --decorate --remotes
-	tt = log --graph --decorate --tags
-	tro = log --pretty=oneline --abbrev-commit --graph --decorate
+	b       = branch
+	co      = checkout
+	cp      = cherry-pick
+	d       = diff
+	dc      = diff --cached
+	ds      = diff --stat
+	f       = fetch
+	ls      = log --pretty=oneline --abbrev-commit
+	m       = merge
+	p       = push
+	r       = rebase
+	s       = status
+	s-      = switch -
+	sb      = status -sb
+	sbu     = status -sb -uno
+	sm      = submodule
+	su      = status -uno
+	t       = log --graph --decorate
+	ta      = log --graph --decorate --all
+	tb      = log --graph --decorate --branches
+	tr      = log --graph --decorate --remotes
+	tro     = log --pretty=oneline --abbrev-commit --graph --decorate
+	tt      = log --graph --decorate --tags
 	unstage = reset HEAD --
-	waddp = -c interactive.diffFilter="git diff --word-diff" add -p
-	wc = whatchanged
-	wd = diff --word-diff=color
-	wdc = diff --word-diff=color --cached
-	who = shortlog -s
-	wip = commit -m WIP
+	waddp   = -c interactive.diffFilter="git diff --word-diff" add -p
+	wc      = whatchanged
+	wd      = diff --word-diff=color
+	wdc     = diff --word-diff=color --cached
+	who     = shortlog -s
+	wip     = commit -m WIP
 [push]
 	default = simple
 [include]
