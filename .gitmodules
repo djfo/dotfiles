@@ -46,3 +46,6 @@
 [submodule "vim/pack/dist/start/vim-glsl"]
 	path = vim/pack/dist/start/vim-glsl
 	url = https://github.com/tikhomirov/vim-glsl
+[submodule "vim/pack/dist/start/editorconfig-vim"]
+	path = vim/pack/dist/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim
