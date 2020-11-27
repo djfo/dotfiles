@@ -22,6 +22,7 @@
 	su      = status -uno
 	t       = log --graph --decorate
 	ta      = log --graph --decorate --all
+	taf     = log --graph --decorate --all --pretty=fuller
 	tb      = log --graph --decorate --branches
 	tr      = log --graph --decorate --remotes
 	tro     = log --pretty=oneline --abbrev-commit --graph --decorate
