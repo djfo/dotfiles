@@ -226,7 +226,7 @@ function! ToggleBackground()
     exec('set background=dark')
   endif
 endfunction
-map <f8> <esc>:call ToggleBackground()<cr>
+nmap <F8> :call ToggleBackground()<cr>
 " }}}
 
 augroup numbertoggle
