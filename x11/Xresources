@@ -18,6 +18,7 @@ URxvt.background: black
 URxvt.cursorColor: green
 URxvt.cursorblink: true
 URxvt.utf8: 1
+URxvt.termName: xterm-256color
 
 dzen2.font: -uw-ttyp0-medium-r-normal--18-170-75-75-c-90-iso10646-1
 ! dzen2.foreground: #22ee11
