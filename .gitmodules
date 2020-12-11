@@ -49,3 +49,6 @@
 [submodule "vim/pack/dist/start/editorconfig-vim"]
 	path = vim/pack/dist/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim
+[submodule "vim/pack/dist/start/vim-gnupg"]
+	path = vim/pack/dist/start/vim-gnupg
+	url = https://github.com/jamessan/vim-gnupg
