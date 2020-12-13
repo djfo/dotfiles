@@ -36,5 +36,7 @@
 	wip     = commit -m WIP
 [push]
 	default = simple
+[pull]
+	ff = only
 [include]
 	path = ~/.gitconfig.local
