@@ -24,6 +24,7 @@ if bsd; then
   alias ls="ls -GF1"
   alias lc="ls -GFC"
   alias ll="ls -GFlh"
+  alias lx="exa -l --git"
   alias grep="grep --color=auto"
   alias du="du -h"
 fi
