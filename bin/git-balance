@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 if [ -t 0 ]; then
   let "plus = `git diff $* | grep '^+' | wc -l`"
   let "minus = `git diff $* | grep '^-' | wc -l`"
