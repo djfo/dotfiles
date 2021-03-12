@@ -7,4 +7,3 @@
 
 :set +t
 :set +s
-:set -XOverloadedStrings
