@@ -24,9 +24,11 @@
 	ta      = log --graph --decorate --all
 	taf     = log --graph --decorate --all --pretty=fuller
 	tb      = log --graph --decorate --branches
+	th      = log --graph --decorate HEAD..@{upstream}
 	tr      = log --graph --decorate --remotes
 	tro     = log --pretty=oneline --abbrev-commit --graph --decorate
 	tt      = log --graph --decorate --tags
+	tu      = log --graph --decorate @{upstream}
 	unstage = reset HEAD --
 	waddp   = -c interactive.diffFilter="git diff --word-diff" add -p
 	wc      = whatchanged
