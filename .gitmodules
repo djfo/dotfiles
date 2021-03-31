@@ -52,3 +52,6 @@
 [submodule "vim/pack/dist/start/vim-gnupg"]
 	path = vim/pack/dist/start/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg
+[submodule "vim/pack/dist/start/coc.nvim"]
+	path = vim/pack/dist/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
