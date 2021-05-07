@@ -38,6 +38,12 @@ if darwin; then
     PATH=$PATH:$USDPYTHON_BASEPATH/USD:$PATH:$USDPYTHON_BASEPATH/usdzconvert;
     export PYTHONPATH=$PYTHONPATH:$USDPYTHON_BASEPATH/USD/lib/python
   fi
+
+  case `uname -m` in
+    arm64)
+      PATH=/opt/homebrew/bin:$PATH
+      ;;
+  esac
 fi
 
 export GOPATH=$HOME/go
