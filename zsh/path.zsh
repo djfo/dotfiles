@@ -16,6 +16,7 @@ if darwin; then
   if [ -d $TEXLIVE ]; then
     TEXLIVE_VERSION=`basename $(ls -d $TEXLIVE/2* | tail -1)`
     PATH=$TEXLIVE/$TEXLIVE_VERSION/bin/x86_64-darwin:$PATH
+    PATH=$TEXLIVE/$TEXLIVE_VERSION/bin/universal-darwin:$PATH
   fi
 
   PATH=$HOME/Library/Haskell/bin:$PATH
