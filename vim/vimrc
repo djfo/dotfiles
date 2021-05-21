@@ -31,6 +31,8 @@ set showbreak=…
 set ignorecase
 set smartcase
 
+set formatoptions=tcqj
+
 set showcmd
 
 set nobackup
