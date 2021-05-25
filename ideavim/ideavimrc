@@ -1,2 +1,4 @@
 set ideajoin
 set relativenumber
+
+map , <Leader>
