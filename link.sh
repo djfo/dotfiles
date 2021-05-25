@@ -69,3 +69,4 @@ elif darwin; then
   link x11-osx/xinitrc .xinitrc
 fi
 link mailcap .mailcap
+link ideavim/ideavimrc .ideavimrc
