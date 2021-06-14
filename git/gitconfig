@@ -29,6 +29,7 @@
 	tro     = log --pretty=oneline --abbrev-commit --graph --decorate
 	tt      = log --graph --decorate --tags
 	tu      = log --graph --decorate @{upstream}
+	unmerged = branch --no-merge
 	unstage = reset HEAD --
 	waddp   = -c interactive.diffFilter="git diff --word-diff" add -p
 	wc      = whatchanged
