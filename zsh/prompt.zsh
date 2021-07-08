@@ -19,17 +19,17 @@ set_PS1() {
 }
 
 long() {
-  set_PS1 "%~ $ "
+  set_PS1 "%~ %% "
   RPS1="\$vcs_info_msg_0_%n@%m"
 }
 
 short() {
-  set_PS1 "%1~ $ "
+  set_PS1 "%1~ %% "
   unset RPS1
 }
 
 short_() {
-  set_PS1 "%$1~ $ "
+  set_PS1 "%$1~ %% "
   RPS1="\$vcs_info_msg_0_%n@%m"
 }
 
