@@ -41,5 +41,7 @@
 	default = simple
 [pull]
 	ff = only
+[init]
+	defaultBranch = main
 [include]
 	path = ~/.gitconfig.local
