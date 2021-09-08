@@ -1,0 +1,2 @@
+#!/bin/sh
+tesseract -l eng "$1" stdout
