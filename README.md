@@ -10,6 +10,9 @@ After cloning this repository you may want to initialize the submodules and inst
 
 Some utilities in the `bin` directory require additional dependencies to be installed:
 
+    # macOS
+    $ brew bundle
+
     $ bundle install
 
 ## Vim
