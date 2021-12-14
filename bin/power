@@ -6,6 +6,9 @@ case `uname -s` in
   FreeBSD)
     acpiconf -i 0
     ;;
+  Darwin)
+    pmset -g batt | egrep -o '[0-9]+%'
+    ;;
   *)
     echo "don't know"
     ;;
