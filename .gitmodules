@@ -52,3 +52,9 @@
 [submodule "vim/pack/dist/start/vim-gnupg"]
 	path = vim/pack/dist/start/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg
+[submodule "vim/pack/dist/start/vim-dadbod"]
+	path = vim/pack/dist/start/vim-dadbod
+	url = https://github.com/tpope/vim-dadbod
+[submodule "vim/pack/dist/start/vim-dotenv"]
+	path = vim/pack/dist/start/vim-dotenv
+	url = https://github.com/tpope/vim-dotenv
