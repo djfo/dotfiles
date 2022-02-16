@@ -137,6 +137,7 @@ map <Leader>dt :diffthis<CR>
 map <Leader>du :diffupdate<CR>
 map <Leader>gb :Git blame<CR>
 map <Leader>gd :Gdiff<CR>
+map <Leader>gh :0Gclog<CR>
 map <Leader>gs :Git<CR>
 map <Leader>hc :GhcModCheck<CR>
 map <Leader>hC :GhcModTypeClear<CR>
