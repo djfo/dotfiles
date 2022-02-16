@@ -135,9 +135,9 @@ map <Leader>do :diffoff<CR>
 map <Leader>dp :diffput<CR>
 map <Leader>dt :diffthis<CR>
 map <Leader>du :diffupdate<CR>
-map <Leader>gb :Gblame<CR>
+map <Leader>gb :Git blame<CR>
 map <Leader>gd :Gdiff<CR>
-map <Leader>gs :Gstatus<CR>
+map <Leader>gs :Git<CR>
 map <Leader>hc :GhcModCheck<CR>
 map <Leader>hC :GhcModTypeClear<CR>
 map <Leader>hg :GhcModSigCodegen<CR>
