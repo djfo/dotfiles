@@ -58,3 +58,6 @@
 [submodule "vim/pack/dist/start/vim-dotenv"]
 	path = vim/pack/dist/start/vim-dotenv
 	url = https://github.com/tpope/vim-dotenv
+[submodule "vim/pack/dist/start/latex-unicoder.vim"]
+	path = vim/pack/dist/start/latex-unicoder.vim
+	url = https://github.com/joom/latex-unicoder.vim
