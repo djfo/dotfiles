@@ -273,3 +273,7 @@ let g:ctrlp_map = ''
 nnoremap <leader>e :CtrlP<cr>
 
 let g:markdown_fold_override_foldtext=0
+
+" latex-unicoder
+let g:unicoder_cancel_normal=1
+let g:unicoder_cancel_visual=1
