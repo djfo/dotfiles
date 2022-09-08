@@ -39,6 +39,7 @@
 	wip     = commit -m WIP
 [push]
 	default = simple
+	followTags
 [pull]
 	ff = only
 [init]
