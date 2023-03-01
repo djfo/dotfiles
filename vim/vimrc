@@ -245,10 +245,10 @@ dig \|- 8866
 
 autocmd BufNewFile,BufRead /tmp/mutt* set filetype=mail tw=60
 
-if v:version >= 800 && has('patch1206')
-  autocmd CmdlineEnter * set digraph
-  autocmd CmdlineLeave * set nodigraph
-endif
+" if v:version >= 800 && has('patch1206')
+"   autocmd CmdlineEnter * set digraph
+"   autocmd CmdlineLeave * set nodigraph
+" endif
 
 " vim -b : edit binary using xxd-format!
 augroup Binary
