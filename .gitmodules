@@ -61,3 +61,9 @@
 [submodule "vim/pack/dist/start/latex-unicoder.vim"]
 	path = vim/pack/dist/start/latex-unicoder.vim
 	url = https://github.com/joom/latex-unicoder.vim
+[submodule "vim/pack/dist/start/vim-lsp"]
+	path = vim/pack/dist/start/vim-lsp
+	url = https://github.com/prabirshrestha/vim-lsp
+[submodule "vim/pack/dist/start/vim-word-indent"]
+	path = vim/pack/dist/start/vim-word-indent
+	url = https://github.com/maxigit/vim-word-indent
