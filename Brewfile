@@ -30,7 +30,7 @@ brew "fdupes"
 brew "feh"
 cask "xquartz"
 
-# macOS Applications
+# macOS Applications (free, open source)
 cask "firefox"
 cask "macvim"
 cask "omnidisksweeper"
@@ -38,6 +38,15 @@ cask "thunderbird"
 cask "trex"
 cask "visual-studio-code"
 cask "vlc"
+
+# macOS Applications (commercial)
+cask "affinity-designer"
+cask "affinity-photo"
+cask "affinity-publisher"
+cask "airfoil"
+cask "audio-hijack"
+cask "divvy"
+cask "spotify"
 
 # Non-Homebrew
 # https://rustup.rs/
