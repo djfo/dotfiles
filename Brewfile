@@ -34,7 +34,10 @@ cask "xquartz"
 cask "firefox"
 cask "macvim"
 cask "omnidisksweeper"
+cask "thunderbird"
 cask "trex"
+cask "visual-studio-code"
+cask "vlc"
 
 # Non-Homebrew
 # https://rustup.rs/
