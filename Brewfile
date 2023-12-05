@@ -30,8 +30,12 @@ brew "fdupes"
 brew "feh"
 cask "xquartz"
 
+# Fonts
+cask "font-iosevka"
+
 # macOS Applications (free, open source)
 cask "firefox"
+cask "mactracker"
 cask "macvim"
 cask "omnidisksweeper"
 cask "signal"
@@ -47,6 +51,7 @@ cask "affinity-publisher"
 cask "airfoil"
 cask "audio-hijack"
 cask "divvy"
+cask "solvespace"
 cask "spotify"
 
 # Non-Homebrew
