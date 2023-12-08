@@ -34,6 +34,7 @@ cask "xquartz"
 cask "font-iosevka"
 
 # macOS Applications (free, open source)
+cask "background-music"
 cask "firefox"
 cask "mactracker"
 cask "macvim"
