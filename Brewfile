@@ -53,6 +53,7 @@ cask "affinity-publisher"
 cask "airfoil"
 cask "audio-hijack"
 cask "divvy"
+cask "little-snitch"
 cask "solvespace"
 cask "spotify"
 
