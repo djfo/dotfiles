@@ -31,6 +31,7 @@ brew "feh"
 cask "xquartz"
 
 # Fonts
+tap "homebrew/cask-fonts"
 cask "font-iosevka"
 
 # macOS Applications (free, open source)
