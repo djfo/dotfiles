@@ -62,3 +62,6 @@ cask "spotify"
 # Non-Homebrew
 # https://rustup.rs/
 # https://www.haskell.org/ghcup/
+
+# Rosetta
+# % softwareupdate --install-rosetta
