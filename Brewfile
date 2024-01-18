@@ -23,8 +23,10 @@ brew "z"
 brew "zsh"
 
 # Utilities
-brew "tesseract"
 brew "fdupes"
+brew "ffmpeg"
+brew "sox"
+brew "tesseract"
 
 # X11
 brew "feh"
