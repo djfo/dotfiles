@@ -25,6 +25,8 @@ brew "zsh"
 # Utilities
 brew "fdupes"
 brew "ffmpeg"
+brew "imagemagick"
+brew "poppler"
 brew "sox"
 brew "tesseract"
 
