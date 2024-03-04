@@ -1,4 +1,5 @@
 # Developer Tools
+brew "ascii"
 brew "asymptote"
 brew "fswatch"
 brew "git"
@@ -46,9 +47,11 @@ cask "mactracker"
 cask "macvim"
 cask "obs"
 cask "omnidisksweeper"
+cask "openmtp"
 cask "signal"
 cask "thunderbird"
 cask "trex"
+cask "upscayl"
 cask "visual-studio-code"
 cask "vlc"
 
