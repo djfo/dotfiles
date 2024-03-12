@@ -37,6 +37,7 @@ brew "tesseract"
 # VisiData
 tap "saulpw/vd"
 brew "saulpw/vd/visidata"
+brew "pyyaml"
 
 # X11
 brew "feh"
