@@ -1,9 +1,12 @@
 # Developer Tools
 brew "ascii"
-brew "asymptote"
 brew "fswatch"
 brew "git"
 brew "shellcheck"
+
+# Document Preparation
+brew "asymptote"
+cask "mactex"
 
 # Cryptography and Password Management
 brew "gnupg"
