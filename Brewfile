@@ -34,6 +34,10 @@ brew "poppler"
 brew "sox"
 brew "tesseract"
 
+# VisiData
+tap "saulpw/vd"
+brew "saulpw/vd/visidata"
+
 # X11
 brew "feh"
 cask "xquartz"
