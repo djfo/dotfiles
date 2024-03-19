@@ -6,6 +6,7 @@ brew "shellcheck"
 
 # Document Preparation
 brew "asymptote"
+brew "graphviz"
 cask "mactex"
 
 # Cryptography and Password Management
