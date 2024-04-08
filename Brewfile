@@ -34,6 +34,7 @@ brew "imagemagick"
 brew "poppler"
 brew "sox"
 brew "tesseract"
+brew "yt-dlp"
 
 # VisiData
 tap "saulpw/vd"
