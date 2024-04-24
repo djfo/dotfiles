@@ -7,6 +7,7 @@ brew "shellcheck"
 # Document Preparation
 brew "asymptote"
 brew "graphviz"
+brew "lilypond"
 cask "mactex"
 
 # Cryptography and Password Management
@@ -73,6 +74,7 @@ cask "airfoil"
 cask "audio-hijack"
 cask "divvy"
 cask "little-snitch"
+cask "reaper"
 cask "solvespace"
 cask "spotify"
 
