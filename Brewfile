@@ -53,6 +53,7 @@ cask "font-iosevka"
 # macOS Applications (free, open source)
 cask "background-music"
 cask "calibre"
+cask "cyberduck"
 cask "firefox"
 cask "mactracker"
 cask "macvim"
