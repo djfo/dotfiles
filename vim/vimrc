@@ -82,10 +82,6 @@ set hlsearch
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 " }}}
 
-" move line up/down using C-k and C-j
-map <c-k> kddpk
-map <c-j> ddp
-
 " open/close fold using <space>
 nnoremap <space> za
 
