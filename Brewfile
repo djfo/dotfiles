@@ -77,9 +77,11 @@ cask "audio-hijack"
 cask "divvy"
 cask "little-snitch"
 cask "loopback"
+cask "messenger"
 cask "reaper"
 cask "solvespace"
 cask "spotify"
+cask "whatsapp"
 
 # Non-Homebrew
 # https://rustup.rs/
