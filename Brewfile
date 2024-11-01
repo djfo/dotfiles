@@ -37,6 +37,7 @@ brew "poppler"
 brew "sox"
 brew "tesseract"
 brew "yt-dlp"
+brew "zbar"
 
 # VisiData
 tap "saulpw/vd"
