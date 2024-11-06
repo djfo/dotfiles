@@ -2,6 +2,7 @@
 brew "ascii"
 brew "fswatch"
 brew "git"
+brew "lazygit"
 brew "shellcheck"
 
 # Document Preparation
