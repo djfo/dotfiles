@@ -32,6 +32,7 @@ brew "zsh"
 # Utilities
 brew "fdupes"
 brew "ffmpeg"
+brew "id3v2"
 brew "imagemagick"
 brew "pdfgrep"
 brew "poppler"
