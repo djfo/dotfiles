@@ -1,0 +1,20 @@
+#!/bin/sh
+TEMPDIR=`mktemp -d`
+index=0
+for each in "$@"; do
+  tesseract \
+    "$each" \
+    $TEMPDIR/ocred-$index \
+    -l eng \
+    pdf
+  let index=$index+1
+done
+# open $TEMPDIR
+pdfunite $TEMPDIR/ocred-*.pdf ocred-and-united.pdf
+# open $TEMPDIR
+# echo "Press ENTER…"
+# read
+if [ $# -eq 1 ]; then
+  mv ocred-and-united.pdf "`basename "$1"`.pdf"
+fi
+rm -rf $TEMPDIR
