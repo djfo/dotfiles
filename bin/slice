@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+
+
+import re
+import subprocess
+import sys
+import io
+from typing import Union
+from types import NoneType
+
+
+def get_size(filename: str) -> Union[tuple[int, int], NoneType]:
+    proc = subprocess.Popen(["identify", filename], stdout=subprocess.PIPE)
+    re_identify = r'(\d+)x(\d+)'
+    for line in io.TextIOWrapper(proc.stdout):
+        line = line.strip("\n")
+        print(line)
+        match = re.search(re_identify, line)
+        if match:
+            width = match.group(1)
+            height = match.group(2)
+            return (int(width), int(height))
+        else:
+            return None
+
+
+def f(filename: str):
+    result = get_size(filename)
+    if result:
+        (width, height) = result
+        if width > height:
+            print("landscape", width, height)
+            geometry1 = "%dx%d+%d+0" % (width / 2, height, 0)
+            geometry2 = "%dx%d+%d+0" % (width / 2, height, width / 2)
+            subprocess.run(["convert", filename, "-crop", geometry1, "landscape1.png"])
+            subprocess.run(["convert", filename, "-crop", geometry2, "landscape2.png"])
+        elif width < height:
+            print("portrait", width, height)
+            geometry1 = "%dx%d+0+%d" % (width, height / 2, 0)
+            geometry2 = "%dx%d+0+%d" % (width, height, height / 2)
+            subprocess.run(["convert", filename, "-crop", geometry1, "portrait1.png"])
+            subprocess.run(["convert", filename, "-crop", geometry2, "portrait2.png"])
+        else:
+            print("error: input is square")
+            exit(2)
+    else:
+        print("no size info")
+        exit(1)
+
+
+for arg in sys.argv[1:]:
+    f(arg)
