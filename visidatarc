@@ -1,0 +1,2 @@
+options.disp_date_fmt = '%m/%d/%Y'
+options.quitguard=True

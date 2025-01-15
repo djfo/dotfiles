@@ -70,3 +70,4 @@ elif darwin; then
 fi
 link mailcap .mailcap
 link ideavim/ideavimrc .ideavimrc
+link visidatarc .visidatarc
