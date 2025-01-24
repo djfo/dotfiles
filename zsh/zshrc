@@ -6,10 +6,6 @@ export EDITOR=vim
 autoload colors
 colors
 
-autoload -Uz compinit
-compinit
-zstyle ':completion:*' menu select=4
-
 DIRSTACKSIZE=8
 
 source ~/.zsh/os.zsh
@@ -22,6 +18,14 @@ source ~/.zsh/darcs.zsh
 source ~/.zsh/cmd.zsh
 source ~/.zsh/pass.zsh
 source ~/.zsh/env.zsh
+
+if darwin; then
+  eval $(brew shellenv)
+fi
+
+autoload -Uz compinit
+compinit
+zstyle ':completion:*' menu select=4
 
 if linux || freebsd; then
   source ~/.zsh/x11.zsh
