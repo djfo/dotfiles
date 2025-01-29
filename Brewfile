@@ -1,5 +1,6 @@
 # Developer Tools
 brew "ascii"
+brew "cloc"
 brew "fswatch"
 brew "git"
 brew "lazygit"
