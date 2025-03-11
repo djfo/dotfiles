@@ -27,6 +27,7 @@ brew "jq"
 brew "wget"
 
 # Shell
+brew "fzf"
 brew "z"
 brew "zsh"
 
