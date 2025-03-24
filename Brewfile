@@ -44,9 +44,7 @@ brew "yt-dlp"
 brew "zbar"
 
 # VisiData
-tap "saulpw/vd"
-brew "saulpw/vd/visidata"
-brew "pyyaml"
+brew "visidata"
 
 # X11
 brew "feh"
