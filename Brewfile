@@ -5,6 +5,7 @@ brew "fswatch"
 brew "git"
 brew "lazygit"
 brew "shellcheck"
+brew "xcodes"
 
 # Document Preparation
 brew "asymptote"
