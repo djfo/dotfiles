@@ -1,0 +1,9 @@
+#!/bin/zsh
+NAME_PART=$(basename $(git name-rev HEAD | cut -d ' ' -f 2))
+DATE_FORMAT=%Y-%m-%dT%H:%M:%S%z
+DATE_PART=$(date +$DATE_FORMAT | tr : _)
+BRANCH_NAME=$NAME_PART@$DATE_PART
+echo git branch $BRANCH_NAME
+echo "Press RETURN to continue, press ^C to abort."
+read
+git branch $BRANCH_NAME
