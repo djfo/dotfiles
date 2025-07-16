@@ -90,6 +90,7 @@ cask "whatsapp"
 # Non-Homebrew
 # https://rustup.rs/
 # https://www.haskell.org/ghcup/
+# https://github.com/twostraws/ControlRoom
 
 # Rosetta
 # % softwareupdate --install-rosetta
