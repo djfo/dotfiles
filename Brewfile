@@ -53,7 +53,9 @@ brew "feh"
 cask "xquartz"
 
 # Fonts
+cask "font-b612"
 cask "font-iosevka"
+cask "font-optician-sans"
 
 # macOS Applications (free, open source)
 cask "blender"
