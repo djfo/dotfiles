@@ -11,6 +11,7 @@ brew "xcodes"
 brew "asymptote"
 brew "graphviz"
 brew "lilypond"
+brew "pandoc"
 cask "mactex"
 
 # Cryptography and Password Management
