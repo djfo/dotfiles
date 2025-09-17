@@ -9,10 +9,13 @@ brew "xcodes"
 
 # Document Preparation
 brew "asymptote"
-brew "graphviz"
 brew "lilypond"
 brew "pandoc"
 cask "mactex"
+
+# Graphics
+brew "graphviz"
+brew "potrace"
 
 # Cryptography and Password Management
 brew "gnupg"
