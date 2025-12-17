@@ -26,6 +26,7 @@ fi
 autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select=4
+which fzf > /dev/null && source <(fzf --zsh)
 
 if linux || freebsd; then
   source ~/.zsh/x11.zsh
