@@ -42,6 +42,10 @@ if darwin; then
   }
 
   alias gvim="mvim"
+
+  alias say.de="say -v Anna"
+  alias say.en_US="say"
+  alias say.fr_CA="say -v Amélie"
 fi
 
 if linux || freebsd; then
