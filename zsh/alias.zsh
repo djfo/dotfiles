@@ -46,6 +46,12 @@ if darwin; then
   alias say.de="say -v Anna"
   alias say.en_US="say"
   alias say.fr_CA="say -v Amélie"
+
+  case `uname -m` in
+    arm64)
+      alias brew.x64_86=/usr/local/bin/brew
+      ;;
+  esac
 fi
 
 if linux || freebsd; then
