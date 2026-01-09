@@ -92,6 +92,7 @@ cask "messenger"
 cask "reaper"
 cask "solvespace"
 cask "spotify"
+cask "tableplus"
 cask "whatsapp"
 
 # Non-Homebrew
