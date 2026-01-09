@@ -99,6 +99,7 @@ cask "whatsapp"
 # https://rustup.rs/
 # https://www.haskell.org/ghcup/
 # https://github.com/twostraws/ControlRoom
+# https://github.com/js/Differati
 
 # Rosetta
 # % softwareupdate --install-rosetta
