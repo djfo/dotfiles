@@ -15,6 +15,10 @@ Some utilities in the `bin` directory require additional dependencies to be inst
 
     $ bundle install
 
+To update submodules, run the following command:
+
+    $ git submodule update --recursive --remote
+
 ## Vim
 
 Install native extension for `vimproc` plugin
