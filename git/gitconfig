@@ -32,7 +32,7 @@
 	unmerged = branch --no-merge
 	unstage = reset HEAD --
 	waddp   = -c interactive.diffFilter="git diff --word-diff" add -p
-	wc      = whatchanged
+	wc      = log --raw --no-merges
 	wd      = diff --word-diff=color
 	wdc     = diff --word-diff=color --cached
 	who     = shortlog -s
