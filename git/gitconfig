@@ -35,6 +35,7 @@
 	wc      = log --raw --no-merges
 	wd      = diff --word-diff=color
 	wdc     = diff --word-diff=color --cached
+	whatsnew = log --graph --decorate --tags @{u} ^HEAD
 	who     = shortlog -s
 	wip     = commit -m WIP
 [push]
