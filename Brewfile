@@ -7,6 +7,7 @@ brew "lazygit"
 brew "rcs"
 brew "shellcheck"
 brew "xcodes"
+cask "ghostty"
 
 # Document Preparation
 brew "asymptote"
