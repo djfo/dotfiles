@@ -1,0 +1,6 @@
+term = xterm-256color
+
+font-family = Iosevka Term
+font-size = 18
+
+keybind = cmd+shift+equal=equalize_splits

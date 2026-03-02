@@ -71,3 +71,4 @@ fi
 link mailcap .mailcap
 link ideavim/ideavimrc .ideavimrc
 link visidatarc .visidatarc
+link config .config
