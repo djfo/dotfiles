@@ -29,6 +29,7 @@ brew "mutt"
 brew "urlview"
 
 # Web
+brew "fx"
 brew "hurl"
 brew "jq"
 brew "wget"
