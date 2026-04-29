@@ -4,3 +4,7 @@ font-family = Iosevka Term
 font-size = 18
 
 keybind = cmd+shift+equal=equalize_splits
+
+cursor-style = block
+cursor-style-blink = true
+shell-integration-features = no-cursor
