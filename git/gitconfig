@@ -10,6 +10,7 @@
 	dc      = diff --cached
 	ds      = diff --stat
 	f       = fetch
+	h       = history
 	ls      = log --pretty=oneline --abbrev-commit
 	m       = merge
 	p       = push
