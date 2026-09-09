@@ -119,6 +119,7 @@ let mapleader=","
 noremap <Leader>hey :echo "Hey, ho, let's go!"<cr>
 
 " sort -f -t \> -k 2
+map <Leader>@ :let @* = expand("%")<CR>
 map <Leader>1 1gt<CR>
 map <Leader>2 2gt<CR>
 map <Leader>3 3gt<CR>
