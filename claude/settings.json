@@ -1,6 +1,10 @@
 {
   "permissions": {
-    "defaultMode": "default"
+    "defaultMode": "default",
+    "deny": [
+      "Read(.env*)",
+      "Read(*.db)"
+    ]
   },
   "theme": "auto"
 }
