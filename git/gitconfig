@@ -39,6 +39,7 @@
 	whatsnew = log --graph --decorate --tags @{u} ^HEAD
 	who     = shortlog -s
 	wip     = commit -m WIP
+	wt      = worktree
 [push]
 	default = simple
 	followTags
