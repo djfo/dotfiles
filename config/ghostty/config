@@ -8,3 +8,7 @@ keybind = cmd+shift+equal=equalize_splits
 cursor-style = block
 cursor-style-blink = true
 shell-integration-features = no-cursor
+
+keybind = global:opt+space=toggle_quick_terminal
+quick-terminal-position = center
+quick-terminal-size = 60%, 50%
