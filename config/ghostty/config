@@ -12,3 +12,6 @@ shell-integration-features = no-cursor
 keybind = global:opt+space=toggle_quick_terminal
 quick-terminal-position = center
 quick-terminal-size = 60%, 50%
+
+copy-on-select = primary
+middle-click-action = primary-paste
