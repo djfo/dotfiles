@@ -1,2 +1,14 @@
+import unicodedata, locale
+import uuid
+
 options.disp_date_fmt = '%m/%d/%Y'
 options.quitguard=True
+
+def fold(s):
+    # strip accents/umlauts and ignore case: "Ärger" -> "arger"
+    s = unicodedata.normalize('NFKD', str(s))
+    return ''.join(c for c in s if not unicodedata.combining(c)).casefold()
+
+locale.setlocale(locale.LC_COLLATE, 'de_AT.UTF-8')
+def coll(s):
+    return ''.join(f'{ord(c):08x}' for c in locale.strxfrm(str(s)))
