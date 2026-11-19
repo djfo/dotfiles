@@ -67,3 +67,6 @@
 [submodule "vim/pack/dist/start/vim-word-indent"]
 	path = vim/pack/dist/start/vim-word-indent
 	url = https://github.com/maxigit/vim-word-indent
+[submodule "vim/pack/dist/start/unicode.vim"]
+	path = vim/pack/dist/start/unicode.vim
+	url = https://github.com/chrisbra/unicode.vim
