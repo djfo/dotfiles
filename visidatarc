@@ -12,3 +12,6 @@ def fold(s):
 locale.setlocale(locale.LC_COLLATE, 'de_AT.UTF-8')
 def coll(s):
     return ''.join(f'{ord(c):08x}' for c in locale.strxfrm(str(s)))
+
+def byte_groups(s):
+    return ':'.join(['%02x' % (int(x)) for x in s.split(".")])
